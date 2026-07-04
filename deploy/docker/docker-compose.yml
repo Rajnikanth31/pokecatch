@@ -1,0 +1,71 @@
+# Local full stack: Postgres + Redis + the Go services. `docker compose up --build`.
+# The DB is seeded from db/migrations on first boot. Services that set
+# DATABASE_URL use Postgres; without it they fall back to in-memory (dev).
+version: "3.9"
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: beastbound
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: dev
+    ports: ["5432:5432"]
+    volumes:
+      - ./../../db/migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d beastbound"]
+      interval: 5s
+      retries: 10
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes", "--appendfsync", "everysec"]
+    ports: ["6379:6379"]
+
+  auth:
+    build:
+      context: ./../..
+      dockerfile: deploy/docker/battle.Dockerfile
+      args: { SERVICE: auth }
+    environment:
+      LISTEN_ADDR: ":8080"
+      AUTH_JWT_SECRET: "dev-only-secret"
+      DATABASE_URL: "postgres://postgres:dev@postgres:5432/beastbound"
+    ports: ["8080:8080"]
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  profile:
+    build:
+      context: ./../..
+      dockerfile: deploy/docker/battle.Dockerfile
+      args: { SERVICE: profile }
+    environment:
+      LISTEN_ADDR: ":8081"
+      DATABASE_URL: "postgres://postgres:dev@postgres:5432/beastbound"
+      DEX_SEED_PATH: /data/creatures/seed.json
+      DEX_FLAGSHIP_PATH: /data/creatures/flagships.json
+    ports: ["8081:8081"]
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  battle:
+    build:
+      context: ./../..
+      dockerfile: deploy/docker/battle.Dockerfile
+      args: { SERVICE: battle }
+    environment:
+      LISTEN_ADDR: ":8082"
+      DEX_SEED_PATH: /data/creatures/seed.json
+      DEX_FLAGSHIP_PATH: /data/creatures/flagships.json
+    ports: ["8082:8082"]
+    depends_on: [redis]
+
+  gateway:
+    build:
+      context: ./../..
+      dockerfile: deploy/docker/battle.Dockerfile
+      args: { SERVICE: gateway }
+    environment:
+      LISTEN_ADDR: ":8088"
+    ports: ["8088:8088"]
+    depends_on: [auth, profile, battle]

@@ -1,0 +1,63 @@
+# Battle server runs as a Deployment behind a headless Service. Battles are
+# in-memory and sticky-routed, so we do NOT autoscale on CPU alone — we scale on
+# active-session count (custom metric) and drain gracefully on rollout so no
+# match is killed mid-turn (terminationGracePeriod > max turn budget).
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: battle
+  labels: { app: battle, tier: realtime }
+spec:
+  replicas: 3
+  selector: { matchLabels: { app: battle } }
+  template:
+    metadata:
+      labels: { app: battle }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8082"
+    spec:
+      terminationGracePeriodSeconds: 60   # > 45s turn budget => clean drain
+      containers:
+        - name: battle
+          image: ghcr.io/aurelia/beastbound-battle:latest
+          ports: [{ containerPort: 8082 }]
+          env:
+            - { name: DEX_SEED_PATH, value: /data/creatures/seed.json }
+            - { name: DEX_FLAGSHIP_PATH, value: /data/creatures/flagships.json }
+          resources:
+            requests: { cpu: "250m", memory: "256Mi" }
+            limits:   { cpu: "1",    memory: "512Mi" }
+          readinessProbe:
+            httpGet: { path: /readyz, port: 8082 }
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /healthz, port: 8082 }
+            periodSeconds: 10
+          lifecycle:
+            preStop:
+              exec: { command: ["/bin/sh", "-c", "sleep 15"] }  # let LB deregister
+---
+apiVersion: v1
+kind: Service
+metadata: { name: battle }
+spec:
+  selector: { app: battle }
+  ports: [{ port: 8082, targetPort: 8082 }]
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata: { name: battle }
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: battle }
+  minReplicas: 3
+  maxReplicas: 50
+  metrics:
+    - type: Pods
+      pods:
+        metric: { name: active_battle_sessions }
+        target: { type: AverageValue, averageValue: "400" }  # ~400 matches/pod
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300   # avoid thrashing realtime nodes

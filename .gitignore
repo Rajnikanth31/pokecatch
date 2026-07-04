@@ -1,0 +1,33 @@
+# --- Go ---
+/bin/
+*.exe
+*.test
+*.out
+cover.out
+
+# --- Build artifacts ---
+/build/
+*.apk
+*.aab
+
+# --- Godot ---
+# The .godot/ folder is generated on import; never commit it.
+client-godot/.godot/
+client-godot/android/build/
+export.cfg
+
+# --- Secrets / signing ---
+*.keystore
+*.jks
+.env
+*.pem
+
+# --- Match/replay scratch output ---
+demo-match-record.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~

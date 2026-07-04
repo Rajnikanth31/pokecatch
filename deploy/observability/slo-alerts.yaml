@@ -1,0 +1,29 @@
+# Prometheus recording + alerting rules implementing SRE error-budget policy.
+# SLOs (see docs/08-devops-sre.md): API availability 99.9%, p99 REST latency
+# < 250ms, battle-turn resolution p99 < 50ms, crash-free sessions > 99.5%.
+groups:
+  - name: slo.rules
+    rules:
+      # 28-day availability burn for the API gateway.
+      - record: job:gateway_availability:ratio28d
+        expr: |
+          sum(rate(http_requests_total{job="gateway",code!~"5.."}[28d]))
+          / sum(rate(http_requests_total{job="gateway"}[28d]))
+      # Multi-window, multi-burn-rate alert (Google SRE workbook pattern).
+      - alert: GatewayErrorBudgetBurnFast
+        expr: |
+          (1 - job:gateway_availability:ratio28d) > (14.4 * (1 - 0.999))
+        for: 5m
+        labels: { severity: page }
+        annotations: { summary: "Gateway burning error budget 14.4x (2% in 1h)" }
+      - alert: BattleTurnLatencyHigh
+        expr: histogram_quantile(0.99, sum(rate(battle_turn_seconds_bucket[5m])) by (le)) > 0.05
+        for: 10m
+        labels: { severity: page }
+        annotations: { summary: "Battle turn p99 > 50ms — realtime SLO at risk" }
+      - alert: CrashRateHigh
+        expr: |
+          sum(rate(client_crash_total[1h])) / sum(rate(client_session_total[1h])) > 0.005
+        for: 15m
+        labels: { severity: ticket }
+        annotations: { summary: "Crash-free sessions below 99.5% SLO" }

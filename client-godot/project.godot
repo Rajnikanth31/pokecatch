@@ -1,0 +1,35 @@
+; Godot 4 project file for Aurelia: Beastbound client.
+; Open this folder in Godot 4.2+ (Project > Import). One project exports to
+; Windows/macOS/Linux (PC), iOS/Android (mobile), and Web (HTML5/WASM) — the
+; single-codebase, three-platform requirement that drove the engine choice.
+;
+; Autoloads provide app-wide singletons: a typed event bus, the REST API client,
+; and the authoritative battle socket. Gameplay scenes stay thin views over these.
+
+config_version=5
+
+[application]
+config/name="Aurelia: Beastbound"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+; GL Compatibility renderer is the one that exports cleanly to Web + low-end mobile.
+
+[autoload]
+EventBus="*res://scripts/EventBus.gd"
+Api="*res://scripts/ApiClient.gd"
+Battle="*res://scripts/BattleClient.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/handheld/orientation="landscape"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+
+[input]
+ui_up={ "deadzone": 0.5, "events": [] }
+; Input actions are remapped at runtime by scripts/InputMap defaults; keyboard,
+; gamepad and touch all resolve to the same action names (see docs/03).

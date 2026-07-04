@@ -1,0 +1,7207 @@
+{
+  "version": 1,
+  "seed": 42,
+  "generated": 300,
+  "species": [
+    {
+      "dex_id": 1,
+      "name": "bruiser-001",
+      "element1": 9,
+      "element2": 11,
+      "base": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 60,
+        "sp_attack": 41,
+        "sp_defense": 52,
+        "speed": 48
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 2,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 116,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 2,
+      "name": "wall-002",
+      "element1": 9,
+      "element2": 4,
+      "base": {
+        "hp": 71,
+        "attack": 33,
+        "defense": 79,
+        "sp_attack": 40,
+        "sp_defense": 79,
+        "speed": 33
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 3,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 116,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 3,
+      "name": "specialist-003",
+      "element1": 9,
+      "element2": 5,
+      "base": {
+        "hp": 50,
+        "attack": 36,
+        "defense": 45,
+        "sp_attack": 90,
+        "sp_defense": 54,
+        "speed": 68
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 4,
+      "name": "sweeper-004",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 44,
+        "attack": 79,
+        "defense": 40,
+        "sp_attack": 53,
+        "sp_defense": 40,
+        "speed": 79
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 5,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 116,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 5,
+      "name": "sweeper-005",
+      "element1": 8,
+      "element2": 9,
+      "base": {
+        "hp": 41,
+        "attack": 73,
+        "defense": 37,
+        "sp_attack": 49,
+        "sp_defense": 37,
+        "speed": 73
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 6,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 6,
+      "name": "balanced-006",
+      "element1": 8,
+      "element2": 2,
+      "base": {
+        "hp": 59,
+        "attack": 59,
+        "defense": 59,
+        "sp_attack": 59,
+        "sp_defense": 59,
+        "speed": 59
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 7,
+      "name": "tank-007",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 76,
+        "attack": 54,
+        "defense": 68,
+        "sp_attack": 35,
+        "sp_defense": 57,
+        "speed": 32
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 8,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 114,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 8,
+      "name": "bruiser-008",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 63,
+        "attack": 79,
+        "defense": 63,
+        "sp_attack": 42,
+        "sp_defense": 55,
+        "speed": 50
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 9,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 9,
+      "name": "wall-009",
+      "element1": 10,
+      "element2": 2,
+      "base": {
+        "hp": 70,
+        "attack": 32,
+        "defense": 77,
+        "sp_attack": 40,
+        "sp_defense": 77,
+        "speed": 32
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 115,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 10,
+      "name": "balanced-010",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 57,
+        "attack": 57,
+        "defense": 57,
+        "sp_attack": 57,
+        "sp_defense": 57,
+        "speed": 57
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 11,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 11,
+      "name": "wall-011",
+      "element1": 5,
+      "element2": 1,
+      "base": {
+        "hp": 67,
+        "attack": 31,
+        "defense": 75,
+        "sp_attack": 38,
+        "sp_defense": 75,
+        "speed": 31
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 12,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 113,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 12,
+      "name": "sweeper-012",
+      "element1": 5,
+      "element2": 0,
+      "base": {
+        "hp": 41,
+        "attack": 72,
+        "defense": 37,
+        "sp_attack": 49,
+        "sp_defense": 37,
+        "speed": 72
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 13,
+      "name": "balanced-013",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 54,
+        "attack": 54,
+        "defense": 54,
+        "sp_attack": 54,
+        "sp_defense": 54,
+        "speed": 54
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 14,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 114,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 14,
+      "name": "balanced-014",
+      "element1": 3,
+      "element2": 0,
+      "base": {
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "sp_attack": 48,
+        "sp_defense": 48,
+        "speed": 48
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 15,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 108,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 15,
+      "name": "wall-015",
+      "element1": 3,
+      "element2": 8,
+      "base": {
+        "hp": 67,
+        "attack": 31,
+        "defense": 74,
+        "sp_attack": 38,
+        "sp_defense": 74,
+        "speed": 31
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 113,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 16,
+      "name": "sweeper-016",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 41,
+        "attack": 72,
+        "defense": 37,
+        "sp_attack": 49,
+        "sp_defense": 37,
+        "speed": 72
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 17,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 17,
+      "name": "bruiser-017",
+      "element1": 11,
+      "element2": 7,
+      "base": {
+        "hp": 63,
+        "attack": 79,
+        "defense": 63,
+        "sp_attack": 42,
+        "sp_defense": 54,
+        "speed": 50
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 18,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 18,
+      "name": "tank-018",
+      "element1": 11,
+      "element2": 4,
+      "base": {
+        "hp": 77,
+        "attack": 54,
+        "defense": 69,
+        "sp_attack": 36,
+        "sp_defense": 58,
+        "speed": 32
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 114,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 19,
+      "name": "specialist-019",
+      "element1": 4,
+      "element2": 5,
+      "base": {
+        "hp": 50,
+        "attack": 36,
+        "defense": 45,
+        "sp_attack": 90,
+        "sp_defense": 54,
+        "speed": 68
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 20,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 20,
+      "name": "balanced-020",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 59,
+        "attack": 59,
+        "defense": 59,
+        "sp_attack": 59,
+        "sp_defense": 59,
+        "speed": 59
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 21,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 21,
+      "name": "balanced-021",
+      "element1": 4,
+      "element2": 8,
+      "base": {
+        "hp": 53,
+        "attack": 53,
+        "defense": 53,
+        "sp_attack": 53,
+        "sp_defense": 53,
+        "speed": 53
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 113,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 22,
+      "name": "wall-022",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 74,
+        "attack": 34,
+        "defense": 82,
+        "sp_attack": 42,
+        "sp_defense": 82,
+        "speed": 34
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 23,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 118,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 23,
+      "name": "balanced-023",
+      "element1": 10,
+      "element2": 6,
+      "base": {
+        "hp": 52,
+        "attack": 52,
+        "defense": 52,
+        "sp_attack": 52,
+        "sp_defense": 52,
+        "speed": 52
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 24,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 24,
+      "name": "tank-024",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 81,
+        "attack": 57,
+        "defense": 73,
+        "sp_attack": 37,
+        "sp_defense": 61,
+        "speed": 33
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 25,
+      "name": "wall-025",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 62,
+        "attack": 29,
+        "defense": 69,
+        "sp_attack": 36,
+        "sp_defense": 69,
+        "speed": 29
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 26,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 109,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 26,
+      "name": "balanced-026",
+      "element1": 4,
+      "element2": 1,
+      "base": {
+        "hp": 57,
+        "attack": 57,
+        "defense": 57,
+        "sp_attack": 57,
+        "sp_defense": 57,
+        "speed": 57
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 27,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 27,
+      "name": "sweeper-027",
+      "element1": 4,
+      "element2": 7,
+      "base": {
+        "hp": 43,
+        "attack": 76,
+        "defense": 39,
+        "sp_attack": 51,
+        "sp_defense": 39,
+        "speed": 76
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 114,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 28,
+      "name": "specialist-028",
+      "element1": 8,
+      "element2": 11,
+      "base": {
+        "hp": 47,
+        "attack": 35,
+        "defense": 43,
+        "sp_attack": 85,
+        "sp_defense": 52,
+        "speed": 64
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 29,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 115,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 29,
+      "name": "bruiser-029",
+      "element1": 8,
+      "element2": 4,
+      "base": {
+        "hp": 56,
+        "attack": 70,
+        "defense": 56,
+        "sp_attack": 38,
+        "sp_defense": 49,
+        "speed": 45
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 30,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 30,
+      "name": "specialist-030",
+      "element1": 8,
+      "element2": 10,
+      "base": {
+        "hp": 51,
+        "attack": 37,
+        "defense": 46,
+        "sp_attack": 92,
+        "sp_defense": 55,
+        "speed": 69
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 31,
+      "name": "sweeper-031",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 40,
+        "attack": 71,
+        "defense": 37,
+        "sp_attack": 48,
+        "sp_defense": 37,
+        "speed": 71
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 32,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 32,
+      "name": "sweeper-032",
+      "element1": 11,
+      "element2": 9,
+      "base": {
+        "hp": 41,
+        "attack": 72,
+        "defense": 37,
+        "sp_attack": 48,
+        "sp_defense": 37,
+        "speed": 72
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 33,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 33,
+      "name": "wall-033",
+      "element1": 11,
+      "element2": 7,
+      "base": {
+        "hp": 65,
+        "attack": 30,
+        "defense": 72,
+        "sp_attack": 37,
+        "sp_defense": 72,
+        "speed": 30
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 34,
+      "name": "sweeper-034",
+      "element1": 3,
+      "element2": 6,
+      "base": {
+        "hp": 42,
+        "attack": 75,
+        "defense": 38,
+        "sp_attack": 51,
+        "sp_defense": 38,
+        "speed": 75
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 35,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 113,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 35,
+      "name": "tank-035",
+      "element1": 3,
+      "element2": 4,
+      "base": {
+        "hp": 83,
+        "attack": 58,
+        "defense": 75,
+        "sp_attack": 38,
+        "sp_defense": 62,
+        "speed": 34
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 36,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 118,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 36,
+      "name": "tank-036",
+      "element1": 3,
+      "element2": 11,
+      "base": {
+        "hp": 68,
+        "attack": 48,
+        "defense": 61,
+        "sp_attack": 32,
+        "sp_defense": 52,
+        "speed": 29
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 108,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 37,
+      "name": "balanced-037",
+      "element1": 2,
+      "element2": 7,
+      "base": {
+        "hp": 51,
+        "attack": 51,
+        "defense": 51,
+        "sp_attack": 51,
+        "sp_defense": 51,
+        "speed": 51
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 38,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 38,
+      "name": "sweeper-038",
+      "element1": 2,
+      "element2": 1,
+      "base": {
+        "hp": 46,
+        "attack": 83,
+        "defense": 42,
+        "sp_attack": 56,
+        "sp_defense": 42,
+        "speed": 83
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 39,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 39,
+      "name": "tank-039",
+      "element1": 2,
+      "element2": 10,
+      "base": {
+        "hp": 71,
+        "attack": 50,
+        "defense": 64,
+        "sp_attack": 33,
+        "sp_defense": 54,
+        "speed": 30
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 110,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 40,
+      "name": "wall-040",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 64,
+        "attack": 30,
+        "defense": 71,
+        "sp_attack": 37,
+        "sp_defense": 71,
+        "speed": 30
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 41,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 41,
+      "name": "sweeper-041",
+      "element1": 7,
+      "element2": 1,
+      "base": {
+        "hp": 40,
+        "attack": 71,
+        "defense": 36,
+        "sp_attack": 48,
+        "sp_defense": 36,
+        "speed": 71
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 42,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 110,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 42,
+      "name": "bruiser-042",
+      "element1": 7,
+      "element2": 2,
+      "base": {
+        "hp": 54,
+        "attack": 68,
+        "defense": 54,
+        "sp_attack": 37,
+        "sp_defense": 47,
+        "speed": 44
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 43,
+      "name": "bruiser-043",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 61,
+        "attack": 77,
+        "defense": 61,
+        "sp_attack": 41,
+        "sp_defense": 53,
+        "speed": 49
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 44,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 44,
+      "name": "specialist-044",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 51,
+        "attack": 37,
+        "defense": 46,
+        "sp_attack": 92,
+        "sp_defense": 55,
+        "speed": 69
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 45,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 45,
+      "name": "sweeper-045",
+      "element1": 9,
+      "element2": 4,
+      "base": {
+        "hp": 39,
+        "attack": 69,
+        "defense": 35,
+        "sp_attack": 47,
+        "sp_defense": 35,
+        "speed": 69
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 109,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 46,
+      "name": "wall-046",
+      "element1": 6,
+      "element2": 7,
+      "base": {
+        "hp": 74,
+        "attack": 34,
+        "defense": 82,
+        "sp_attack": 42,
+        "sp_defense": 82,
+        "speed": 34
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 47,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 118,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 47,
+      "name": "balanced-047",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 57,
+        "attack": 57,
+        "defense": 57,
+        "sp_attack": 57,
+        "sp_defense": 57,
+        "speed": 57
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 48,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 48,
+      "name": "sweeper-048",
+      "element1": 6,
+      "element2": 0,
+      "base": {
+        "hp": 42,
+        "attack": 74,
+        "defense": 38,
+        "sp_attack": 50,
+        "sp_defense": 38,
+        "speed": 74
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 49,
+      "name": "bruiser-049",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 51,
+        "attack": 64,
+        "defense": 51,
+        "sp_attack": 35,
+        "sp_defense": 45,
+        "speed": 42
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 50,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 108,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 50,
+      "name": "wall-050",
+      "element1": 1,
+      "element2": 8,
+      "base": {
+        "hp": 72,
+        "attack": 33,
+        "defense": 80,
+        "sp_attack": 41,
+        "sp_defense": 80,
+        "speed": 33
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 51,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 51,
+      "name": "specialist-051",
+      "element1": 1,
+      "element2": 4,
+      "base": {
+        "hp": 48,
+        "attack": 35,
+        "defense": 44,
+        "sp_attack": 87,
+        "sp_defense": 53,
+        "speed": 66
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 116,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 52,
+      "name": "tank-052",
+      "element1": 6,
+      "element2": 8,
+      "base": {
+        "hp": 83,
+        "attack": 59,
+        "defense": 75,
+        "sp_attack": 38,
+        "sp_defense": 63,
+        "speed": 34
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 53,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 53,
+      "name": "sweeper-053",
+      "element1": 6,
+      "element2": 8,
+      "base": {
+        "hp": 38,
+        "attack": 67,
+        "defense": 35,
+        "sp_attack": 46,
+        "sp_defense": 35,
+        "speed": 67
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 54,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 108,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 54,
+      "name": "sweeper-054",
+      "element1": 6,
+      "element2": 5,
+      "base": {
+        "hp": 38,
+        "attack": 67,
+        "defense": 35,
+        "sp_attack": 46,
+        "sp_defense": 35,
+        "speed": 67
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 108,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 55,
+      "name": "wall-055",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 75,
+        "attack": 34,
+        "defense": 83,
+        "sp_attack": 42,
+        "sp_defense": 83,
+        "speed": 34
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 56,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 119,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 56,
+      "name": "sweeper-056",
+      "element1": 6,
+      "element2": 8,
+      "base": {
+        "hp": 46,
+        "attack": 82,
+        "defense": 41,
+        "sp_attack": 55,
+        "sp_defense": 41,
+        "speed": 82
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 57,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 118,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 57,
+      "name": "tank-057",
+      "element1": 6,
+      "element2": 7,
+      "base": {
+        "hp": 69,
+        "attack": 49,
+        "defense": 62,
+        "sp_attack": 33,
+        "sp_defense": 52,
+        "speed": 29
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 109,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 58,
+      "name": "sweeper-058",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 40,
+        "attack": 70,
+        "defense": 36,
+        "sp_attack": 47,
+        "sp_defense": 36,
+        "speed": 70
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 59,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 110,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 59,
+      "name": "tank-059",
+      "element1": 8,
+      "element2": 3,
+      "base": {
+        "hp": 70,
+        "attack": 50,
+        "defense": 63,
+        "sp_attack": 33,
+        "sp_defense": 53,
+        "speed": 30
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 60,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 110,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 60,
+      "name": "sweeper-060",
+      "element1": 8,
+      "element2": 1,
+      "base": {
+        "hp": 39,
+        "attack": 69,
+        "defense": 35,
+        "sp_attack": 47,
+        "sp_defense": 35,
+        "speed": 69
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 109,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 61,
+      "name": "bruiser-061",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 54,
+        "attack": 68,
+        "defense": 54,
+        "sp_attack": 37,
+        "sp_defense": 48,
+        "speed": 44
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 62,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 62,
+      "name": "tank-062",
+      "element1": 11,
+      "element2": 4,
+      "base": {
+        "hp": 80,
+        "attack": 56,
+        "defense": 72,
+        "sp_attack": 37,
+        "sp_defense": 60,
+        "speed": 33
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 63,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 116,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 63,
+      "name": "sweeper-063",
+      "element1": 11,
+      "element2": 3,
+      "base": {
+        "hp": 45,
+        "attack": 81,
+        "defense": 41,
+        "sp_attack": 54,
+        "sp_defense": 41,
+        "speed": 81
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 64,
+      "name": "wall-064",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 72,
+        "attack": 33,
+        "defense": 80,
+        "sp_attack": 41,
+        "sp_defense": 80,
+        "speed": 33
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 65,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 116,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 65,
+      "name": "specialist-065",
+      "element1": 9,
+      "element2": 10,
+      "base": {
+        "hp": 47,
+        "attack": 34,
+        "defense": 43,
+        "sp_attack": 84,
+        "sp_defense": 51,
+        "speed": 63
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 66,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 114,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 66,
+      "name": "sweeper-066",
+      "element1": 9,
+      "element2": 4,
+      "base": {
+        "hp": 44,
+        "attack": 78,
+        "defense": 39,
+        "sp_attack": 52,
+        "sp_defense": 39,
+        "speed": 78
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 115,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 67,
+      "name": "tank-067",
+      "element1": 1,
+      "element2": 8,
+      "base": {
+        "hp": 73,
+        "attack": 52,
+        "defense": 66,
+        "sp_attack": 34,
+        "sp_defense": 56,
+        "speed": 31
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 68,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 68,
+      "name": "tank-068",
+      "element1": 1,
+      "element2": 9,
+      "base": {
+        "hp": 69,
+        "attack": 49,
+        "defense": 62,
+        "sp_attack": 33,
+        "sp_defense": 52,
+        "speed": 29
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 69,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 109,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 69,
+      "name": "tank-069",
+      "element1": 1,
+      "element2": 9,
+      "base": {
+        "hp": 78,
+        "attack": 55,
+        "defense": 70,
+        "sp_attack": 36,
+        "sp_defense": 59,
+        "speed": 32
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 115,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 70,
+      "name": "balanced-070",
+      "element1": 10,
+      "element2": 7,
+      "base": {
+        "hp": 51,
+        "attack": 51,
+        "defense": 51,
+        "sp_attack": 51,
+        "sp_defense": 51,
+        "speed": 51
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 71,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 71,
+      "name": "tank-071",
+      "element1": 10,
+      "element2": 8,
+      "base": {
+        "hp": 81,
+        "attack": 57,
+        "defense": 73,
+        "sp_attack": 37,
+        "sp_defense": 61,
+        "speed": 33
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 72,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 117,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 72,
+      "name": "tank-072",
+      "element1": 10,
+      "element2": 9,
+      "base": {
+        "hp": 72,
+        "attack": 51,
+        "defense": 65,
+        "sp_attack": 34,
+        "sp_defense": 54,
+        "speed": 30
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 111,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 73,
+      "name": "specialist-073",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 48,
+        "attack": 35,
+        "defense": 44,
+        "sp_attack": 86,
+        "sp_defense": 52,
+        "speed": 65
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 74,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 115,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 74,
+      "name": "balanced-074",
+      "element1": 9,
+      "element2": 8,
+      "base": {
+        "hp": 54,
+        "attack": 54,
+        "defense": 54,
+        "sp_attack": 54,
+        "sp_defense": 54,
+        "speed": 54
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 75,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 114,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 75,
+      "name": "tank-075",
+      "element1": 9,
+      "element2": 6,
+      "base": {
+        "hp": 75,
+        "attack": 53,
+        "defense": 68,
+        "sp_attack": 35,
+        "sp_defense": 57,
+        "speed": 31
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 113,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 76,
+      "name": "bruiser-076",
+      "element1": 8,
+      "element2": 7,
+      "base": {
+        "hp": 56,
+        "attack": 70,
+        "defense": 56,
+        "sp_attack": 38,
+        "sp_defense": 49,
+        "speed": 45
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 77,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 77,
+      "name": "tank-077",
+      "element1": 8,
+      "element2": 7,
+      "base": {
+        "hp": 77,
+        "attack": 55,
+        "defense": 70,
+        "sp_attack": 36,
+        "sp_defense": 58,
+        "speed": 32
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 78,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 115,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 78,
+      "name": "specialist-078",
+      "element1": 8,
+      "element2": 7,
+      "base": {
+        "hp": 45,
+        "attack": 33,
+        "defense": 41,
+        "sp_attack": 80,
+        "sp_defense": 49,
+        "speed": 61
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 79,
+      "name": "wall-079",
+      "element1": 1,
+      "element2": 11,
+      "base": {
+        "hp": 66,
+        "attack": 31,
+        "defense": 74,
+        "sp_attack": 38,
+        "sp_defense": 74,
+        "speed": 31
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 80,
+      "evolve_level": 16,
+      "catch_rate": 200,
+      "xp_yield": 112,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 80,
+      "name": "balanced-080",
+      "element1": 1,
+      "element2": 9,
+      "base": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 50,
+        "sp_attack": 50,
+        "sp_defense": 50,
+        "speed": 50
+      },
+      "rarity": 0,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 81,
+      "evolve_level": 34,
+      "catch_rate": 200,
+      "xp_yield": 110,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 81,
+      "name": "bruiser-081",
+      "element1": 1,
+      "element2": 2,
+      "base": {
+        "hp": 61,
+        "attack": 77,
+        "defense": 61,
+        "sp_attack": 41,
+        "sp_defense": 53,
+        "speed": 49
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 82,
+      "name": "wall-082",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 84,
+        "attack": 38,
+        "defense": 94,
+        "sp_attack": 47,
+        "sp_defense": 94,
+        "speed": 38
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 83,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 83,
+      "name": "tank-083",
+      "element1": 4,
+      "element2": 5,
+      "base": {
+        "hp": 95,
+        "attack": 66,
+        "defense": 85,
+        "sp_attack": 43,
+        "sp_defense": 71,
+        "speed": 38
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 84,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 84,
+      "name": "sweeper-084",
+      "element1": 4,
+      "element2": 5,
+      "base": {
+        "hp": 53,
+        "attack": 96,
+        "defense": 47,
+        "sp_attack": 64,
+        "sp_defense": 47,
+        "speed": 96
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 85,
+      "name": "wall-085",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 84,
+        "attack": 38,
+        "defense": 94,
+        "sp_attack": 47,
+        "sp_defense": 94,
+        "speed": 38
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 86,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 86,
+      "name": "wall-086",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 89,
+        "attack": 39,
+        "defense": 99,
+        "sp_attack": 49,
+        "sp_defense": 99,
+        "speed": 39
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 87,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 129,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 87,
+      "name": "bruiser-087",
+      "element1": 5,
+      "element2": 3,
+      "base": {
+        "hp": 72,
+        "attack": 91,
+        "defense": 72,
+        "sp_attack": 48,
+        "sp_defense": 62,
+        "speed": 57
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 88,
+      "name": "bruiser-088",
+      "element1": 8,
+      "element2": 6,
+      "base": {
+        "hp": 64,
+        "attack": 81,
+        "defense": 64,
+        "sp_attack": 43,
+        "sp_defense": 56,
+        "speed": 52
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 89,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 120,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 89,
+      "name": "wall-089",
+      "element1": 8,
+      "element2": 1,
+      "base": {
+        "hp": 85,
+        "attack": 38,
+        "defense": 94,
+        "sp_attack": 47,
+        "sp_defense": 94,
+        "speed": 38
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 90,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 90,
+      "name": "wall-090",
+      "element1": 8,
+      "element2": 4,
+      "base": {
+        "hp": 75,
+        "attack": 34,
+        "defense": 83,
+        "sp_attack": 42,
+        "sp_defense": 83,
+        "speed": 34
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 119,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 91,
+      "name": "tank-091",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 92,
+        "attack": 64,
+        "defense": 83,
+        "sp_attack": 41,
+        "sp_defense": 69,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 92,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 92,
+      "name": "bruiser-092",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 71,
+        "attack": 90,
+        "defense": 71,
+        "sp_attack": 47,
+        "sp_defense": 61,
+        "speed": 57
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 93,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 93,
+      "name": "bruiser-093",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 70,
+        "attack": 88,
+        "defense": 70,
+        "sp_attack": 47,
+        "sp_defense": 60,
+        "speed": 56
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 125,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 94,
+      "name": "wall-094",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 81,
+        "attack": 36,
+        "defense": 90,
+        "sp_attack": 45,
+        "sp_defense": 90,
+        "speed": 36
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 95,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 123,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 95,
+      "name": "sweeper-095",
+      "element1": 7,
+      "element2": 9,
+      "base": {
+        "hp": 52,
+        "attack": 94,
+        "defense": 47,
+        "sp_attack": 62,
+        "sp_defense": 47,
+        "speed": 94
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 96,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 96,
+      "name": "wall-096",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 72,
+        "attack": 33,
+        "defense": 80,
+        "sp_attack": 41,
+        "sp_defense": 80,
+        "speed": 33
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 116,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 97,
+      "name": "bruiser-097",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 61,
+        "attack": 77,
+        "defense": 61,
+        "sp_attack": 41,
+        "sp_defense": 53,
+        "speed": 49
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 98,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 98,
+      "name": "wall-098",
+      "element1": 10,
+      "element2": 2,
+      "base": {
+        "hp": 78,
+        "attack": 35,
+        "defense": 87,
+        "sp_attack": 44,
+        "sp_defense": 87,
+        "speed": 35
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 99,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 121,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 99,
+      "name": "balanced-099",
+      "element1": 10,
+      "element2": 0,
+      "base": {
+        "hp": 68,
+        "attack": 68,
+        "defense": 68,
+        "sp_attack": 68,
+        "sp_defense": 68,
+        "speed": 68
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 100,
+      "name": "balanced-100",
+      "element1": 1,
+      "element2": 8,
+      "base": {
+        "hp": 64,
+        "attack": 64,
+        "defense": 64,
+        "sp_attack": 64,
+        "sp_defense": 64,
+        "speed": 64
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 101,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 101,
+      "name": "wall-101",
+      "element1": 1,
+      "element2": 2,
+      "base": {
+        "hp": 78,
+        "attack": 35,
+        "defense": 87,
+        "sp_attack": 44,
+        "sp_defense": 87,
+        "speed": 35
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 102,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 121,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 102,
+      "name": "wall-102",
+      "element1": 1,
+      "element2": 4,
+      "base": {
+        "hp": 82,
+        "attack": 37,
+        "defense": 92,
+        "sp_attack": 46,
+        "sp_defense": 92,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 103,
+      "name": "sweeper-103",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 45,
+        "attack": 81,
+        "defense": 41,
+        "sp_attack": 54,
+        "sp_defense": 41,
+        "speed": 81
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 104,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 104,
+      "name": "specialist-104",
+      "element1": 8,
+      "element2": 3,
+      "base": {
+        "hp": 55,
+        "attack": 40,
+        "defense": 50,
+        "sp_attack": 101,
+        "sp_defense": 60,
+        "speed": 76
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 105,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 105,
+      "name": "specialist-105",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 58,
+        "attack": 42,
+        "defense": 53,
+        "sp_attack": 107,
+        "sp_defense": 63,
+        "speed": 80
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 106,
+      "name": "sweeper-106",
+      "element1": 9,
+      "element2": 8,
+      "base": {
+        "hp": 47,
+        "attack": 84,
+        "defense": 42,
+        "sp_attack": 56,
+        "sp_defense": 42,
+        "speed": 84
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 107,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 119,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 107,
+      "name": "sweeper-107",
+      "element1": 9,
+      "element2": 7,
+      "base": {
+        "hp": 51,
+        "attack": 93,
+        "defense": 46,
+        "sp_attack": 61,
+        "sp_defense": 46,
+        "speed": 93
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 108,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 125,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 108,
+      "name": "sweeper-108",
+      "element1": 9,
+      "element2": 7,
+      "base": {
+        "hp": 50,
+        "attack": 90,
+        "defense": 45,
+        "sp_attack": 60,
+        "sp_defense": 45,
+        "speed": 90
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 123,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 109,
+      "name": "tank-109",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 93,
+        "attack": 65,
+        "defense": 83,
+        "sp_attack": 42,
+        "sp_defense": 69,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 110,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 125,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 110,
+      "name": "sweeper-110",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 48,
+        "attack": 87,
+        "defense": 43,
+        "sp_attack": 58,
+        "sp_defense": 43,
+        "speed": 87
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 111,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 121,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 111,
+      "name": "balanced-111",
+      "element1": 9,
+      "element2": 5,
+      "base": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "sp_attack": 70,
+        "sp_defense": 70,
+        "speed": 70
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 112,
+      "name": "balanced-112",
+      "element1": 4,
+      "element2": 0,
+      "base": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "sp_attack": 70,
+        "sp_defense": 70,
+        "speed": 70
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 113,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 113,
+      "name": "tank-113",
+      "element1": 4,
+      "element2": 10,
+      "base": {
+        "hp": 88,
+        "attack": 62,
+        "defense": 80,
+        "sp_attack": 40,
+        "sp_defense": 66,
+        "speed": 36
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 114,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 122,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 114,
+      "name": "specialist-114",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 56,
+        "attack": 40,
+        "defense": 51,
+        "sp_attack": 102,
+        "sp_defense": 61,
+        "speed": 76
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 115,
+      "name": "balanced-115",
+      "element1": 3,
+      "element2": 7,
+      "base": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "sp_attack": 60,
+        "sp_defense": 60,
+        "speed": 60
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 116,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 120,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 116,
+      "name": "wall-116",
+      "element1": 3,
+      "element2": 4,
+      "base": {
+        "hp": 89,
+        "attack": 39,
+        "defense": 99,
+        "sp_attack": 49,
+        "sp_defense": 99,
+        "speed": 39
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 117,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 129,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 117,
+      "name": "sweeper-117",
+      "element1": 3,
+      "element2": 11,
+      "base": {
+        "hp": 50,
+        "attack": 90,
+        "defense": 45,
+        "sp_attack": 60,
+        "sp_defense": 45,
+        "speed": 90
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 123,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 118,
+      "name": "balanced-118",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "sp_attack": 70,
+        "sp_defense": 70,
+        "speed": 70
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 119,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 119,
+      "name": "bruiser-119",
+      "element1": 5,
+      "element2": 1,
+      "base": {
+        "hp": 61,
+        "attack": 77,
+        "defense": 61,
+        "sp_attack": 41,
+        "sp_defense": 53,
+        "speed": 49
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 120,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 120,
+      "name": "wall-120",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 81,
+        "attack": 36,
+        "defense": 90,
+        "sp_attack": 45,
+        "sp_defense": 90,
+        "speed": 36
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 123,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 121,
+      "name": "specialist-121",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 60,
+        "attack": 43,
+        "defense": 55,
+        "sp_attack": 111,
+        "sp_defense": 66,
+        "speed": 83
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 122,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 122,
+      "name": "sweeper-122",
+      "element1": 1,
+      "element2": 8,
+      "base": {
+        "hp": 53,
+        "attack": 97,
+        "defense": 48,
+        "sp_attack": 64,
+        "sp_defense": 48,
+        "speed": 97
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 123,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 123,
+      "name": "wall-123",
+      "element1": 1,
+      "element2": 5,
+      "base": {
+        "hp": 75,
+        "attack": 34,
+        "defense": 83,
+        "sp_attack": 42,
+        "sp_defense": 83,
+        "speed": 34
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 118,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 124,
+      "name": "bruiser-124",
+      "element1": 5,
+      "element2": 9,
+      "base": {
+        "hp": 70,
+        "attack": 89,
+        "defense": 70,
+        "sp_attack": 47,
+        "sp_defense": 61,
+        "speed": 56
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 125,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 125,
+      "name": "tank-125",
+      "element1": 5,
+      "element2": 3,
+      "base": {
+        "hp": 96,
+        "attack": 67,
+        "defense": 87,
+        "sp_attack": 43,
+        "sp_defense": 72,
+        "speed": 38
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 126,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 126,
+      "name": "wall-126",
+      "element1": 5,
+      "element2": 11,
+      "base": {
+        "hp": 81,
+        "attack": 36,
+        "defense": 90,
+        "sp_attack": 45,
+        "sp_defense": 90,
+        "speed": 36
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 123,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 127,
+      "name": "balanced-127",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 67,
+        "attack": 67,
+        "defense": 67,
+        "sp_attack": 67,
+        "sp_defense": 67,
+        "speed": 67
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 128,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 128,
+      "name": "wall-128",
+      "element1": 5,
+      "element2": 1,
+      "base": {
+        "hp": 82,
+        "attack": 37,
+        "defense": 92,
+        "sp_attack": 46,
+        "sp_defense": 92,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 129,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 129,
+      "name": "wall-129",
+      "element1": 5,
+      "element2": 3,
+      "base": {
+        "hp": 90,
+        "attack": 40,
+        "defense": 100,
+        "sp_attack": 50,
+        "sp_defense": 100,
+        "speed": 40
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 130,
+      "name": "bruiser-130",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 65,
+        "attack": 82,
+        "defense": 65,
+        "sp_attack": 43,
+        "sp_defense": 56,
+        "speed": 52
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 131,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 120,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 131,
+      "name": "sweeper-131",
+      "element1": 10,
+      "element2": 7,
+      "base": {
+        "hp": 55,
+        "attack": 100,
+        "defense": 49,
+        "sp_attack": 66,
+        "sp_defense": 49,
+        "speed": 100
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 132,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 132,
+      "name": "specialist-132",
+      "element1": 10,
+      "element2": 6,
+      "base": {
+        "hp": 51,
+        "attack": 37,
+        "defense": 47,
+        "sp_attack": 93,
+        "sp_defense": 56,
+        "speed": 70
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 119,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 133,
+      "name": "specialist-133",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 57,
+        "attack": 41,
+        "defense": 52,
+        "sp_attack": 105,
+        "sp_defense": 62,
+        "speed": 78
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 134,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 134,
+      "name": "bruiser-134",
+      "element1": 6,
+      "element2": 2,
+      "base": {
+        "hp": 68,
+        "attack": 86,
+        "defense": 68,
+        "sp_attack": 46,
+        "sp_defense": 59,
+        "speed": 55
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 135,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 135,
+      "name": "specialist-135",
+      "element1": 6,
+      "element2": 2,
+      "base": {
+        "hp": 54,
+        "attack": 39,
+        "defense": 49,
+        "sp_attack": 98,
+        "sp_defense": 59,
+        "speed": 74
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 122,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 136,
+      "name": "balanced-136",
+      "element1": 9,
+      "element2": 5,
+      "base": {
+        "hp": 67,
+        "attack": 67,
+        "defense": 67,
+        "sp_attack": 67,
+        "sp_defense": 67,
+        "speed": 67
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 137,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 137,
+      "name": "tank-137",
+      "element1": 9,
+      "element2": 7,
+      "base": {
+        "hp": 82,
+        "attack": 58,
+        "defense": 74,
+        "sp_attack": 38,
+        "sp_defense": 62,
+        "speed": 34
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 138,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 118,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 138,
+      "name": "wall-138",
+      "element1": 9,
+      "element2": 11,
+      "base": {
+        "hp": 87,
+        "attack": 39,
+        "defense": 97,
+        "sp_attack": 48,
+        "sp_defense": 97,
+        "speed": 39
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 139,
+      "name": "bruiser-139",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 63,
+        "attack": 80,
+        "defense": 63,
+        "sp_attack": 43,
+        "sp_defense": 55,
+        "speed": 51
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 140,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 119,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 140,
+      "name": "tank-140",
+      "element1": 7,
+      "element2": 4,
+      "base": {
+        "hp": 87,
+        "attack": 61,
+        "defense": 79,
+        "sp_attack": 40,
+        "sp_defense": 66,
+        "speed": 35
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 141,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 121,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 141,
+      "name": "tank-141",
+      "element1": 7,
+      "element2": 4,
+      "base": {
+        "hp": 97,
+        "attack": 68,
+        "defense": 87,
+        "sp_attack": 43,
+        "sp_defense": 72,
+        "speed": 39
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 142,
+      "name": "wall-142",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 90,
+        "attack": 40,
+        "defense": 100,
+        "sp_attack": 50,
+        "sp_defense": 100,
+        "speed": 40
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 143,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 143,
+      "name": "bruiser-143",
+      "element1": 8,
+      "element2": 5,
+      "base": {
+        "hp": 73,
+        "attack": 92,
+        "defense": 73,
+        "sp_attack": 49,
+        "sp_defense": 63,
+        "speed": 58
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 144,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 144,
+      "name": "specialist-144",
+      "element1": 8,
+      "element2": 6,
+      "base": {
+        "hp": 50,
+        "attack": 37,
+        "defense": 46,
+        "sp_attack": 91,
+        "sp_defense": 55,
+        "speed": 68
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 118,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 145,
+      "name": "balanced-145",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 64,
+        "attack": 64,
+        "defense": 64,
+        "sp_attack": 64,
+        "sp_defense": 64,
+        "speed": 64
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 146,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 146,
+      "name": "bruiser-146",
+      "element1": 5,
+      "element2": 1,
+      "base": {
+        "hp": 68,
+        "attack": 86,
+        "defense": 68,
+        "sp_attack": 45,
+        "sp_defense": 59,
+        "speed": 54
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 147,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 123,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 147,
+      "name": "sweeper-147",
+      "element1": 5,
+      "element2": 3,
+      "base": {
+        "hp": 48,
+        "attack": 86,
+        "defense": 43,
+        "sp_attack": 57,
+        "sp_defense": 43,
+        "speed": 86
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 120,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 148,
+      "name": "sweeper-148",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 56,
+        "attack": 102,
+        "defense": 50,
+        "sp_attack": 67,
+        "sp_defense": 50,
+        "speed": 102
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 149,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 131,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 149,
+      "name": "bruiser-149",
+      "element1": 1,
+      "element2": 2,
+      "base": {
+        "hp": 61,
+        "attack": 77,
+        "defense": 61,
+        "sp_attack": 41,
+        "sp_defense": 53,
+        "speed": 49
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 150,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 150,
+      "name": "balanced-150",
+      "element1": 1,
+      "element2": 9,
+      "base": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 65,
+        "sp_attack": 65,
+        "sp_defense": 65,
+        "speed": 65
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 125,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 151,
+      "name": "balanced-151",
+      "element1": 5,
+      "element2": 9,
+      "base": {
+        "hp": 67,
+        "attack": 67,
+        "defense": 67,
+        "sp_attack": 67,
+        "sp_defense": 67,
+        "speed": 67
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 152,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 127,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 152,
+      "name": "wall-152",
+      "element1": 5,
+      "element2": 6,
+      "base": {
+        "hp": 75,
+        "attack": 34,
+        "defense": 83,
+        "sp_attack": 42,
+        "sp_defense": 83,
+        "speed": 34
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 153,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 118,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 153,
+      "name": "balanced-153",
+      "element1": 5,
+      "element2": 9,
+      "base": {
+        "hp": 57,
+        "attack": 57,
+        "defense": 57,
+        "sp_attack": 57,
+        "sp_defense": 57,
+        "speed": 57
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 154,
+      "name": "tank-154",
+      "element1": 4,
+      "element2": 1,
+      "base": {
+        "hp": 94,
+        "attack": 66,
+        "defense": 84,
+        "sp_attack": 42,
+        "sp_defense": 70,
+        "speed": 38
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 155,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 126,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 155,
+      "name": "wall-155",
+      "element1": 4,
+      "element2": 9,
+      "base": {
+        "hp": 82,
+        "attack": 37,
+        "defense": 92,
+        "sp_attack": 46,
+        "sp_defense": 92,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 156,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 156,
+      "name": "bruiser-156",
+      "element1": 4,
+      "element2": 7,
+      "base": {
+        "hp": 69,
+        "attack": 87,
+        "defense": 69,
+        "sp_attack": 46,
+        "sp_defense": 60,
+        "speed": 55
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 125,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 157,
+      "name": "bruiser-157",
+      "element1": 5,
+      "element2": 6,
+      "base": {
+        "hp": 74,
+        "attack": 94,
+        "defense": 74,
+        "sp_attack": 49,
+        "sp_defense": 64,
+        "speed": 59
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 158,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 129,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 158,
+      "name": "sweeper-158",
+      "element1": 5,
+      "element2": 2,
+      "base": {
+        "hp": 45,
+        "attack": 80,
+        "defense": 40,
+        "sp_attack": 54,
+        "sp_defense": 40,
+        "speed": 80
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 159,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 117,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 159,
+      "name": "wall-159",
+      "element1": 5,
+      "element2": 6,
+      "base": {
+        "hp": 90,
+        "attack": 40,
+        "defense": 100,
+        "sp_attack": 50,
+        "sp_defense": 100,
+        "speed": 40
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 160,
+      "name": "bruiser-160",
+      "element1": 6,
+      "element2": 0,
+      "base": {
+        "hp": 60,
+        "attack": 76,
+        "defense": 60,
+        "sp_attack": 41,
+        "sp_defense": 52,
+        "speed": 48
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 161,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 116,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 161,
+      "name": "wall-161",
+      "element1": 6,
+      "element2": 11,
+      "base": {
+        "hp": 77,
+        "attack": 35,
+        "defense": 85,
+        "sp_attack": 43,
+        "sp_defense": 85,
+        "speed": 35
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 162,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 120,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 162,
+      "name": "wall-162",
+      "element1": 6,
+      "element2": 9,
+      "base": {
+        "hp": 77,
+        "attack": 35,
+        "defense": 86,
+        "sp_attack": 43,
+        "sp_defense": 86,
+        "speed": 35
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 120,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 163,
+      "name": "tank-163",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 99,
+        "attack": 69,
+        "defense": 89,
+        "sp_attack": 44,
+        "sp_defense": 74,
+        "speed": 39
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 164,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 129,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 164,
+      "name": "balanced-164",
+      "element1": 8,
+      "element2": 5,
+      "base": {
+        "hp": 61,
+        "attack": 61,
+        "defense": 61,
+        "sp_attack": 61,
+        "sp_defense": 61,
+        "speed": 61
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 165,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 121,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 165,
+      "name": "specialist-165",
+      "element1": 8,
+      "element2": 7,
+      "base": {
+        "hp": 60,
+        "attack": 43,
+        "defense": 55,
+        "sp_attack": 111,
+        "sp_defense": 66,
+        "speed": 83
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 130,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 166,
+      "name": "specialist-166",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 59,
+        "attack": 42,
+        "defense": 53,
+        "sp_attack": 108,
+        "sp_defense": 64,
+        "speed": 81
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 167,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 167,
+      "name": "wall-167",
+      "element1": 1,
+      "element2": 4,
+      "base": {
+        "hp": 83,
+        "attack": 37,
+        "defense": 93,
+        "sp_attack": 46,
+        "sp_defense": 93,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 168,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 125,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 168,
+      "name": "wall-168",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 91,
+        "attack": 40,
+        "defense": 101,
+        "sp_attack": 50,
+        "sp_defense": 101,
+        "speed": 40
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 140,
+      "xp_yield": 131,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 169,
+      "name": "tank-169",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 91,
+        "attack": 64,
+        "defense": 82,
+        "sp_attack": 41,
+        "sp_defense": 68,
+        "speed": 37
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 170,
+      "evolve_level": 16,
+      "catch_rate": 140,
+      "xp_yield": 124,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 170,
+      "name": "specialist-170",
+      "element1": 3,
+      "element2": 11,
+      "base": {
+        "hp": 59,
+        "attack": 42,
+        "defense": 53,
+        "sp_attack": 108,
+        "sp_defense": 64,
+        "speed": 80
+      },
+      "rarity": 1,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 171,
+      "evolve_level": 34,
+      "catch_rate": 140,
+      "xp_yield": 128,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 171,
+      "name": "sweeper-171",
+      "element1": 3,
+      "element2": 11,
+      "base": {
+        "hp": 54,
+        "attack": 99,
+        "defense": 49,
+        "sp_attack": 65,
+        "sp_defense": 49,
+        "speed": 99
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 129,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 172,
+      "name": "tank-172",
+      "element1": 1,
+      "element2": 6,
+      "base": {
+        "hp": 110,
+        "attack": 77,
+        "defense": 99,
+        "sp_attack": 49,
+        "sp_defense": 82,
+        "speed": 43
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 173,
+      "evolve_level": 16,
+      "catch_rate": 90,
+      "xp_yield": 137,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 173,
+      "name": "tank-173",
+      "element1": 1,
+      "element2": 9,
+      "base": {
+        "hp": 120,
+        "attack": 83,
+        "defense": 107,
+        "sp_attack": 52,
+        "sp_defense": 89,
+        "speed": 46
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 174,
+      "evolve_level": 34,
+      "catch_rate": 90,
+      "xp_yield": 143,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 174,
+      "name": "sweeper-174",
+      "element1": 1,
+      "element2": 10,
+      "base": {
+        "hp": 63,
+        "attack": 117,
+        "defense": 56,
+        "sp_attack": 76,
+        "sp_defense": 56,
+        "speed": 117
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 141,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 175,
+      "name": "bruiser-175",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 82,
+        "attack": 105,
+        "defense": 82,
+        "sp_attack": 54,
+        "sp_defense": 71,
+        "speed": 65
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 176,
+      "evolve_level": 16,
+      "catch_rate": 90,
+      "xp_yield": 137,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 176,
+      "name": "wall-176",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 94,
+        "attack": 41,
+        "defense": 104,
+        "sp_attack": 52,
+        "sp_defense": 104,
+        "speed": 41
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 177,
+      "evolve_level": 34,
+      "catch_rate": 90,
+      "xp_yield": 133,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 177,
+      "name": "specialist-177",
+      "element1": 8,
+      "element2": 10,
+      "base": {
+        "hp": 64,
+        "attack": 46,
+        "defense": 58,
+        "sp_attack": 119,
+        "sp_defense": 71,
+        "speed": 89
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 135,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 178,
+      "name": "balanced-178",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 78,
+        "attack": 78,
+        "defense": 78,
+        "sp_attack": 78,
+        "sp_defense": 78,
+        "speed": 78
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 179,
+      "evolve_level": 16,
+      "catch_rate": 90,
+      "xp_yield": 138,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 179,
+      "name": "wall-179",
+      "element1": 10,
+      "element2": 7,
+      "base": {
+        "hp": 92,
+        "attack": 40,
+        "defense": 102,
+        "sp_attack": 51,
+        "sp_defense": 102,
+        "speed": 40
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 180,
+      "evolve_level": 34,
+      "catch_rate": 90,
+      "xp_yield": 131,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 180,
+      "name": "specialist-180",
+      "element1": 10,
+      "element2": 4,
+      "base": {
+        "hp": 60,
+        "attack": 43,
+        "defense": 55,
+        "sp_attack": 111,
+        "sp_defense": 66,
+        "speed": 83
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 181,
+      "name": "balanced-181",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 72,
+        "attack": 72,
+        "defense": 72,
+        "sp_attack": 72,
+        "sp_defense": 72,
+        "speed": 72
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 132,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 182,
+      "name": "sweeper-182",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 64,
+        "attack": 119,
+        "defense": 58,
+        "sp_attack": 78,
+        "sp_defense": 58,
+        "speed": 119
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 143,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 183,
+      "name": "tank-183",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 103,
+        "attack": 72,
+        "defense": 92,
+        "sp_attack": 46,
+        "sp_defense": 77,
+        "speed": 41
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 132,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 184,
+      "name": "tank-184",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 112,
+        "attack": 78,
+        "defense": 100,
+        "sp_attack": 49,
+        "sp_defense": 83,
+        "speed": 44
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 138,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 185,
+      "name": "specialist-185",
+      "element1": 7,
+      "element2": 9,
+      "base": {
+        "hp": 64,
+        "attack": 46,
+        "defense": 58,
+        "sp_attack": 118,
+        "sp_defense": 70,
+        "speed": 88
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 134,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 186,
+      "name": "balanced-186",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 68,
+        "attack": 68,
+        "defense": 68,
+        "sp_attack": 68,
+        "sp_defense": 68,
+        "speed": 68
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 128,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 187,
+      "name": "specialist-187",
+      "element1": 4,
+      "element2": 3,
+      "base": {
+        "hp": 61,
+        "attack": 44,
+        "defense": 55,
+        "sp_attack": 112,
+        "sp_defense": 67,
+        "speed": 84
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 188,
+      "name": "balanced-188",
+      "element1": 3,
+      "element2": 4,
+      "base": {
+        "hp": 82,
+        "attack": 82,
+        "defense": 82,
+        "sp_attack": 82,
+        "sp_defense": 82,
+        "speed": 82
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 142,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 189,
+      "name": "specialist-189",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 71,
+        "attack": 51,
+        "defense": 64,
+        "sp_attack": 133,
+        "sp_defense": 78,
+        "speed": 98
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 143,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 190,
+      "name": "wall-190",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 101,
+        "attack": 44,
+        "defense": 113,
+        "sp_attack": 55,
+        "sp_defense": 113,
+        "speed": 44
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 138,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 191,
+      "name": "specialist-191",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 70,
+        "attack": 50,
+        "defense": 64,
+        "sp_attack": 131,
+        "sp_defense": 77,
+        "speed": 97
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 142,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 192,
+      "name": "balanced-192",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 69,
+        "attack": 69,
+        "defense": 69,
+        "sp_attack": 69,
+        "sp_defense": 69,
+        "speed": 69
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 129,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 193,
+      "name": "bruiser-193",
+      "element1": 10,
+      "element2": 11,
+      "base": {
+        "hp": 75,
+        "attack": 95,
+        "defense": 75,
+        "sp_attack": 50,
+        "sp_defense": 65,
+        "speed": 60
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 194,
+      "name": "sweeper-194",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 62,
+        "attack": 115,
+        "defense": 56,
+        "sp_attack": 75,
+        "sp_defense": 56,
+        "speed": 115
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 140,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 195,
+      "name": "tank-195",
+      "element1": 2,
+      "element2": 2,
+      "base": {
+        "hp": 106,
+        "attack": 74,
+        "defense": 95,
+        "sp_attack": 47,
+        "sp_defense": 79,
+        "speed": 42
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 134,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 196,
+      "name": "bruiser-196",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 84,
+        "attack": 107,
+        "defense": 84,
+        "sp_attack": 55,
+        "sp_defense": 72,
+        "speed": 67
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 138,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 197,
+      "name": "specialist-197",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 69,
+        "attack": 49,
+        "defense": 62,
+        "sp_attack": 128,
+        "sp_defense": 75,
+        "speed": 95
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 140,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 198,
+      "name": "tank-198",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 97,
+        "attack": 68,
+        "defense": 88,
+        "sp_attack": 44,
+        "sp_defense": 73,
+        "speed": 39
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 128,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 199,
+      "name": "tank-199",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 119,
+        "attack": 83,
+        "defense": 107,
+        "sp_attack": 52,
+        "sp_defense": 89,
+        "speed": 46
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 143,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 200,
+      "name": "sweeper-200",
+      "element1": 1,
+      "element2": 3,
+      "base": {
+        "hp": 59,
+        "attack": 109,
+        "defense": 53,
+        "sp_attack": 72,
+        "sp_defense": 53,
+        "speed": 109
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 136,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 201,
+      "name": "tank-201",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 97,
+        "attack": 68,
+        "defense": 88,
+        "sp_attack": 44,
+        "sp_defense": 73,
+        "speed": 39
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 128,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 202,
+      "name": "wall-202",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 90,
+        "attack": 40,
+        "defense": 101,
+        "sp_attack": 50,
+        "sp_defense": 101,
+        "speed": 40
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 203,
+      "name": "wall-203",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 105,
+        "attack": 45,
+        "defense": 117,
+        "sp_attack": 57,
+        "sp_defense": 117,
+        "speed": 45
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 141,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 204,
+      "name": "wall-204",
+      "element1": 8,
+      "element2": 3,
+      "base": {
+        "hp": 100,
+        "attack": 43,
+        "defense": 111,
+        "sp_attack": 55,
+        "sp_defense": 111,
+        "speed": 43
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 137,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 205,
+      "name": "sweeper-205",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 54,
+        "attack": 99,
+        "defense": 49,
+        "sp_attack": 65,
+        "sp_defense": 49,
+        "speed": 99
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 129,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 206,
+      "name": "tank-206",
+      "element1": 11,
+      "element2": 6,
+      "base": {
+        "hp": 118,
+        "attack": 82,
+        "defense": 106,
+        "sp_attack": 52,
+        "sp_defense": 88,
+        "speed": 46
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 142,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 207,
+      "name": "bruiser-207",
+      "element1": 10,
+      "element2": 4,
+      "base": {
+        "hp": 88,
+        "attack": 112,
+        "defense": 88,
+        "sp_attack": 58,
+        "sp_defense": 76,
+        "speed": 70
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 142,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 208,
+      "name": "bruiser-208",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 81,
+        "attack": 103,
+        "defense": 81,
+        "sp_attack": 53,
+        "sp_defense": 70,
+        "speed": 64
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 135,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 209,
+      "name": "tank-209",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 105,
+        "attack": 73,
+        "defense": 94,
+        "sp_attack": 46,
+        "sp_defense": 78,
+        "speed": 41
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 133,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 210,
+      "name": "tank-210",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 97,
+        "attack": 68,
+        "defense": 88,
+        "sp_attack": 44,
+        "sp_defense": 73,
+        "speed": 39
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 128,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 211,
+      "name": "wall-211",
+      "element1": 3,
+      "element2": 1,
+      "base": {
+        "hp": 105,
+        "attack": 45,
+        "defense": 117,
+        "sp_attack": 57,
+        "sp_defense": 117,
+        "speed": 45
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 141,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 212,
+      "name": "tank-212",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 102,
+        "attack": 71,
+        "defense": 92,
+        "sp_attack": 46,
+        "sp_defense": 76,
+        "speed": 40
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 131,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 213,
+      "name": "wall-213",
+      "element1": 7,
+      "element2": 1,
+      "base": {
+        "hp": 96,
+        "attack": 42,
+        "defense": 107,
+        "sp_attack": 53,
+        "sp_defense": 107,
+        "speed": 42
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 134,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 214,
+      "name": "sweeper-214",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 55,
+        "attack": 100,
+        "defense": 49,
+        "sp_attack": 66,
+        "sp_defense": 49,
+        "speed": 100
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 215,
+      "name": "tank-215",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 116,
+        "attack": 81,
+        "defense": 104,
+        "sp_attack": 51,
+        "sp_defense": 87,
+        "speed": 45
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 141,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 216,
+      "name": "sweeper-216",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 55,
+        "attack": 101,
+        "defense": 49,
+        "sp_attack": 66,
+        "sp_defense": 49,
+        "speed": 101
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 217,
+      "name": "bruiser-217",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 87,
+        "attack": 110,
+        "defense": 87,
+        "sp_attack": 57,
+        "sp_defense": 75,
+        "speed": 69
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 141,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 218,
+      "name": "sweeper-218",
+      "element1": 9,
+      "element2": 8,
+      "base": {
+        "hp": 61,
+        "attack": 112,
+        "defense": 54,
+        "sp_attack": 74,
+        "sp_defense": 54,
+        "speed": 112
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 138,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 219,
+      "name": "specialist-219",
+      "element1": 2,
+      "element2": 2,
+      "base": {
+        "hp": 59,
+        "attack": 42,
+        "defense": 53,
+        "sp_attack": 108,
+        "sp_defense": 64,
+        "speed": 81
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 128,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 220,
+      "name": "tank-220",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 103,
+        "attack": 72,
+        "defense": 92,
+        "sp_attack": 46,
+        "sp_defense": 77,
+        "speed": 41
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 132,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 221,
+      "name": "specialist-221",
+      "element1": 11,
+      "element2": 7,
+      "base": {
+        "hp": 68,
+        "attack": 49,
+        "defense": 62,
+        "sp_attack": 127,
+        "sp_defense": 75,
+        "speed": 94
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 139,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 222,
+      "name": "wall-222",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 93,
+        "attack": 41,
+        "defense": 104,
+        "sp_attack": 51,
+        "sp_defense": 104,
+        "speed": 41
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 132,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 223,
+      "name": "specialist-223",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 59,
+        "attack": 42,
+        "defense": 53,
+        "sp_attack": 108,
+        "sp_defense": 64,
+        "speed": 81
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 128,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 224,
+      "name": "specialist-224",
+      "element1": 2,
+      "element2": 2,
+      "base": {
+        "hp": 69,
+        "attack": 49,
+        "defense": 63,
+        "sp_attack": 129,
+        "sp_defense": 76,
+        "speed": 96
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 140,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 225,
+      "name": "tank-225",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 116,
+        "attack": 80,
+        "defense": 104,
+        "sp_attack": 51,
+        "sp_defense": 86,
+        "speed": 45
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 140,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 226,
+      "name": "wall-226",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 94,
+        "attack": 41,
+        "defense": 105,
+        "sp_attack": 52,
+        "sp_defense": 105,
+        "speed": 41
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 133,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 227,
+      "name": "balanced-227",
+      "element1": 3,
+      "element2": 5,
+      "base": {
+        "hp": 77,
+        "attack": 77,
+        "defense": 77,
+        "sp_attack": 77,
+        "sp_defense": 77,
+        "speed": 77
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 137,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 228,
+      "name": "balanced-228",
+      "element1": 10,
+      "element2": 8,
+      "base": {
+        "hp": 76,
+        "attack": 76,
+        "defense": 76,
+        "sp_attack": 76,
+        "sp_defense": 76,
+        "speed": 76
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 136,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 229,
+      "name": "specialist-229",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 68,
+        "attack": 49,
+        "defense": 62,
+        "sp_attack": 127,
+        "sp_defense": 75,
+        "speed": 94
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 139,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 230,
+      "name": "specialist-230",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 61,
+        "attack": 44,
+        "defense": 55,
+        "sp_attack": 113,
+        "sp_defense": 67,
+        "speed": 84
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 131,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 231,
+      "name": "tank-231",
+      "element1": 8,
+      "element2": 9,
+      "base": {
+        "hp": 111,
+        "attack": 77,
+        "defense": 100,
+        "sp_attack": 49,
+        "sp_defense": 83,
+        "speed": 43
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 137,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 232,
+      "name": "bruiser-232",
+      "element1": 3,
+      "element2": 2,
+      "base": {
+        "hp": 78,
+        "attack": 99,
+        "defense": 78,
+        "sp_attack": 52,
+        "sp_defense": 67,
+        "speed": 62
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 133,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 233,
+      "name": "specialist-233",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 68,
+        "attack": 49,
+        "defense": 62,
+        "sp_attack": 127,
+        "sp_defense": 75,
+        "speed": 94
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 139,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 234,
+      "name": "balanced-234",
+      "element1": 2,
+      "element2": 2,
+      "base": {
+        "hp": 76,
+        "attack": 76,
+        "defense": 76,
+        "sp_attack": 76,
+        "sp_defense": 76,
+        "speed": 76
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 136,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 235,
+      "name": "tank-235",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 100,
+        "attack": 70,
+        "defense": 90,
+        "sp_attack": 45,
+        "sp_defense": 75,
+        "speed": 40
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 130,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 236,
+      "name": "sweeper-236",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 58,
+        "attack": 106,
+        "defense": 52,
+        "sp_attack": 70,
+        "sp_defense": 52,
+        "speed": 106
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 134,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 237,
+      "name": "wall-237",
+      "element1": 4,
+      "element2": 0,
+      "base": {
+        "hp": 97,
+        "attack": 42,
+        "defense": 108,
+        "sp_attack": 53,
+        "sp_defense": 108,
+        "speed": 42
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 135,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 238,
+      "name": "tank-238",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 114,
+        "attack": 79,
+        "defense": 103,
+        "sp_attack": 50,
+        "sp_defense": 85,
+        "speed": 44
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 139,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 239,
+      "name": "wall-239",
+      "element1": 3,
+      "element2": 11,
+      "base": {
+        "hp": 89,
+        "attack": 39,
+        "defense": 99,
+        "sp_attack": 49,
+        "sp_defense": 99,
+        "speed": 39
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 129,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 240,
+      "name": "sweeper-240",
+      "element1": 8,
+      "element2": 3,
+      "base": {
+        "hp": 60,
+        "attack": 111,
+        "defense": 54,
+        "sp_attack": 73,
+        "sp_defense": 54,
+        "speed": 111
+      },
+      "rarity": 2,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 90,
+      "xp_yield": 137,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 241,
+      "name": "bruiser-241",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 91,
+        "attack": 116,
+        "defense": 91,
+        "sp_attack": 60,
+        "sp_defense": 78,
+        "speed": 72
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 145,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 242,
+      "name": "specialist-242",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 72,
+        "attack": 51,
+        "defense": 65,
+        "sp_attack": 135,
+        "sp_defense": 79,
+        "speed": 100
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 144,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 243,
+      "name": "bruiser-243",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 93,
+        "attack": 118,
+        "defense": 93,
+        "sp_attack": 61,
+        "sp_defense": 80,
+        "speed": 74
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 244,
+      "name": "bruiser-244",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 88,
+        "attack": 112,
+        "defense": 88,
+        "sp_attack": 58,
+        "sp_defense": 76,
+        "speed": 70
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 142,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 245,
+      "name": "wall-245",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 112,
+        "attack": 48,
+        "defense": 125,
+        "sp_attack": 61,
+        "sp_defense": 125,
+        "speed": 48
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 246,
+      "name": "sweeper-246",
+      "element1": 6,
+      "element2": 11,
+      "base": {
+        "hp": 64,
+        "attack": 118,
+        "defense": 57,
+        "sp_attack": 77,
+        "sp_defense": 57,
+        "speed": 118
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 142,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 247,
+      "name": "balanced-247",
+      "element1": 2,
+      "element2": 6,
+      "base": {
+        "hp": 86,
+        "attack": 86,
+        "defense": 86,
+        "sp_attack": 86,
+        "sp_defense": 86,
+        "speed": 86
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 248,
+      "name": "specialist-248",
+      "element1": 3,
+      "element2": 8,
+      "base": {
+        "hp": 74,
+        "attack": 52,
+        "defense": 67,
+        "sp_attack": 138,
+        "sp_defense": 81,
+        "speed": 103
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 249,
+      "name": "sweeper-249",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 62,
+        "attack": 115,
+        "defense": 55,
+        "sp_attack": 75,
+        "sp_defense": 55,
+        "speed": 115
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 140,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 250,
+      "name": "wall-250",
+      "element1": 11,
+      "element2": 1,
+      "base": {
+        "hp": 106,
+        "attack": 46,
+        "defense": 118,
+        "sp_attack": 58,
+        "sp_defense": 118,
+        "speed": 46
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 142,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 251,
+      "name": "balanced-251",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 85,
+        "attack": 85,
+        "defense": 85,
+        "sp_attack": 85,
+        "sp_defense": 85,
+        "speed": 85
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 145,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 252,
+      "name": "specialist-252",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 74,
+        "attack": 52,
+        "defense": 67,
+        "sp_attack": 138,
+        "sp_defense": 81,
+        "speed": 102
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 253,
+      "name": "wall-253",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 105,
+        "attack": 45,
+        "defense": 117,
+        "sp_attack": 57,
+        "sp_defense": 117,
+        "speed": 45
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 141,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 254,
+      "name": "bruiser-254",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 92,
+        "attack": 117,
+        "defense": 92,
+        "sp_attack": 60,
+        "sp_defense": 79,
+        "speed": 73
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 255,
+      "name": "bruiser-255",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 88,
+        "attack": 112,
+        "defense": 88,
+        "sp_attack": 58,
+        "sp_defense": 76,
+        "speed": 70
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 142,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 256,
+      "name": "bruiser-256",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 96,
+        "attack": 122,
+        "defense": 96,
+        "sp_attack": 63,
+        "sp_defense": 83,
+        "speed": 76
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 149,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 257,
+      "name": "sweeper-257",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 69,
+        "attack": 128,
+        "defense": 61,
+        "sp_attack": 84,
+        "sp_defense": 61,
+        "speed": 128
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 149,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 258,
+      "name": "bruiser-258",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 86,
+        "attack": 109,
+        "defense": 86,
+        "sp_attack": 56,
+        "sp_defense": 74,
+        "speed": 68
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 140,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 259,
+      "name": "tank-259",
+      "element1": 2,
+      "element2": 2,
+      "base": {
+        "hp": 125,
+        "attack": 87,
+        "defense": 112,
+        "sp_attack": 55,
+        "sp_defense": 93,
+        "speed": 48
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 147,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 260,
+      "name": "tank-260",
+      "element1": 2,
+      "element2": 2,
+      "base": {
+        "hp": 123,
+        "attack": 85,
+        "defense": 110,
+        "sp_attack": 54,
+        "sp_defense": 91,
+        "speed": 47
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 145,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 261,
+      "name": "balanced-261",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 87,
+        "attack": 87,
+        "defense": 87,
+        "sp_attack": 87,
+        "sp_defense": 87,
+        "speed": 87
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 147,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 262,
+      "name": "tank-262",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 126,
+        "attack": 87,
+        "defense": 113,
+        "sp_attack": 55,
+        "sp_defense": 93,
+        "speed": 48
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 147,
+      "spawns": [
+        "obsidian_caldera"
+      ]
+    },
+    {
+      "dex_id": 263,
+      "name": "wall-263",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 105,
+        "attack": 45,
+        "defense": 117,
+        "sp_attack": 57,
+        "sp_defense": 117,
+        "speed": 45
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 141,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 264,
+      "name": "tank-264",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 123,
+        "attack": 85,
+        "defense": 110,
+        "sp_attack": 54,
+        "sp_defense": 91,
+        "speed": 47
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 145,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 265,
+      "name": "specialist-265",
+      "element1": 10,
+      "element2": 2,
+      "base": {
+        "hp": 72,
+        "attack": 51,
+        "defense": 65,
+        "sp_attack": 134,
+        "sp_defense": 78,
+        "speed": 99
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 143,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 266,
+      "name": "bruiser-266",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 93,
+        "attack": 118,
+        "defense": 93,
+        "sp_attack": 61,
+        "sp_defense": 80,
+        "speed": 74
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 267,
+      "name": "wall-267",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 105,
+        "attack": 45,
+        "defense": 117,
+        "sp_attack": 57,
+        "sp_defense": 117,
+        "speed": 45
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 141,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 268,
+      "name": "specialist-268",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 74,
+        "attack": 52,
+        "defense": 67,
+        "sp_attack": 138,
+        "sp_defense": 81,
+        "speed": 102
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 269,
+      "name": "bruiser-269",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 94,
+        "attack": 120,
+        "defense": 94,
+        "sp_attack": 62,
+        "sp_defense": 81,
+        "speed": 75
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 148,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 270,
+      "name": "bruiser-270",
+      "element1": 7,
+      "element2": 7,
+      "base": {
+        "hp": 89,
+        "attack": 113,
+        "defense": 89,
+        "sp_attack": 58,
+        "sp_defense": 77,
+        "speed": 71
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 143,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 271,
+      "name": "specialist-271",
+      "element1": 9,
+      "element2": 9,
+      "base": {
+        "hp": 72,
+        "attack": 51,
+        "defense": 65,
+        "sp_attack": 135,
+        "sp_defense": 79,
+        "speed": 100
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 144,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 272,
+      "name": "balanced-272",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 87,
+        "attack": 87,
+        "defense": 87,
+        "sp_attack": 87,
+        "sp_defense": 87,
+        "speed": 87
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 147,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 273,
+      "name": "tank-273",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 121,
+        "attack": 84,
+        "defense": 108,
+        "sp_attack": 53,
+        "sp_defense": 90,
+        "speed": 47
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 144,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 274,
+      "name": "sweeper-274",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 69,
+        "attack": 128,
+        "defense": 61,
+        "sp_attack": 83,
+        "sp_defense": 61,
+        "speed": 128
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 148,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 275,
+      "name": "wall-275",
+      "element1": 4,
+      "element2": 6,
+      "base": {
+        "hp": 107,
+        "attack": 46,
+        "defense": 119,
+        "sp_attack": 58,
+        "sp_defense": 119,
+        "speed": 46
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 143,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 276,
+      "name": "specialist-276",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 74,
+        "attack": 53,
+        "defense": 67,
+        "sp_attack": 139,
+        "sp_defense": 81,
+        "speed": 103
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 146,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 277,
+      "name": "tank-277",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 127,
+        "attack": 88,
+        "defense": 114,
+        "sp_attack": 55,
+        "sp_defense": 94,
+        "speed": 49
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 148,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 278,
+      "name": "sweeper-278",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 69,
+        "attack": 129,
+        "defense": 62,
+        "sp_attack": 84,
+        "sp_defense": 62,
+        "speed": 129
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 149,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 279,
+      "name": "wall-279",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 112,
+        "attack": 48,
+        "defense": 125,
+        "sp_attack": 61,
+        "sp_defense": 125,
+        "speed": 48
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 147,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 280,
+      "name": "wall-280",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 103,
+        "attack": 45,
+        "defense": 115,
+        "sp_attack": 56,
+        "sp_defense": 115,
+        "speed": 45
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 140,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 281,
+      "name": "balanced-281",
+      "element1": 8,
+      "element2": 8,
+      "base": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "sp_attack": 80,
+        "sp_defense": 80,
+        "speed": 80
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 140,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 282,
+      "name": "specialist-282",
+      "element1": 6,
+      "element2": 6,
+      "base": {
+        "hp": 77,
+        "attack": 54,
+        "defense": 69,
+        "sp_attack": 144,
+        "sp_defense": 84,
+        "speed": 107
+      },
+      "rarity": 3,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 45,
+      "xp_yield": 149,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 283,
+      "name": "specialist-283",
+      "element1": 7,
+      "element2": 2,
+      "base": {
+        "hp": 81,
+        "attack": 57,
+        "defense": 73,
+        "sp_attack": 153,
+        "sp_defense": 89,
+        "speed": 113
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 155,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 284,
+      "name": "tank-284",
+      "element1": 3,
+      "element2": 6,
+      "base": {
+        "hp": 141,
+        "attack": 97,
+        "defense": 126,
+        "sp_attack": 60,
+        "sp_defense": 104,
+        "speed": 53
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 157,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 285,
+      "name": "sweeper-285",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 74,
+        "attack": 139,
+        "defense": 66,
+        "sp_attack": 90,
+        "sp_defense": 66,
+        "speed": 139
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 156,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 286,
+      "name": "tank-286",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 138,
+        "attack": 95,
+        "defense": 124,
+        "sp_attack": 59,
+        "sp_defense": 102,
+        "speed": 52
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 155,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 287,
+      "name": "tank-287",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 144,
+        "attack": 99,
+        "defense": 129,
+        "sp_attack": 62,
+        "sp_defense": 107,
+        "speed": 54
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 159,
+      "spawns": [
+        "frostbarrow_tundra"
+      ]
+    },
+    {
+      "dex_id": 288,
+      "name": "tank-288",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 140,
+        "attack": 97,
+        "defense": 126,
+        "sp_attack": 60,
+        "sp_defense": 104,
+        "speed": 53
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 157,
+      "spawns": [
+        "aurora_expanse"
+      ]
+    },
+    {
+      "dex_id": 289,
+      "name": "wall-289",
+      "element1": 4,
+      "element2": 4,
+      "base": {
+        "hp": 127,
+        "attack": 54,
+        "defense": 142,
+        "sp_attack": 68,
+        "sp_defense": 142,
+        "speed": 54
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 158,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 290,
+      "name": "balanced-290",
+      "element1": 7,
+      "element2": 0,
+      "base": {
+        "hp": 98,
+        "attack": 98,
+        "defense": 98,
+        "sp_attack": 98,
+        "sp_defense": 98,
+        "speed": 98
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 158,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 291,
+      "name": "sweeper-291",
+      "element1": 3,
+      "element2": 3,
+      "base": {
+        "hp": 77,
+        "attack": 144,
+        "defense": 68,
+        "sp_attack": 94,
+        "sp_defense": 68,
+        "speed": 144
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 159,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 292,
+      "name": "sweeper-292",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 75,
+        "attack": 140,
+        "defense": 66,
+        "sp_attack": 91,
+        "sp_defense": 66,
+        "speed": 140
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 156,
+      "spawns": [
+        "emberfall_volcano"
+      ]
+    },
+    {
+      "dex_id": 293,
+      "name": "bruiser-293",
+      "element1": 5,
+      "element2": 6,
+      "base": {
+        "hp": 104,
+        "attack": 133,
+        "defense": 104,
+        "sp_attack": 67,
+        "sp_defense": 89,
+        "speed": 82
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 156,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 294,
+      "name": "balanced-294",
+      "element1": 10,
+      "element2": 10,
+      "base": {
+        "hp": 95,
+        "attack": 95,
+        "defense": 95,
+        "sp_attack": 95,
+        "sp_defense": 95,
+        "speed": 95
+      },
+      "rarity": 4,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 12,
+      "xp_yield": 155,
+      "spawns": [
+        "sunken_archive"
+      ]
+    },
+    {
+      "dex_id": 295,
+      "name": "balanced-295",
+      "element1": 10,
+      "element2": 4,
+      "base": {
+        "hp": 97,
+        "attack": 97,
+        "defense": 97,
+        "sp_attack": 97,
+        "sp_defense": 97,
+        "speed": 97
+      },
+      "rarity": 5,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 3,
+      "xp_yield": 157,
+      "spawns": [
+        "whispering_canopy"
+      ]
+    },
+    {
+      "dex_id": 296,
+      "name": "bruiser-296",
+      "element1": 5,
+      "element2": 5,
+      "base": {
+        "hp": 104,
+        "attack": 133,
+        "defense": 104,
+        "sp_attack": 67,
+        "sp_defense": 89,
+        "speed": 82
+      },
+      "rarity": 5,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 3,
+      "xp_yield": 156,
+      "spawns": [
+        "stormspire_peaks"
+      ]
+    },
+    {
+      "dex_id": 297,
+      "name": "bruiser-297",
+      "element1": 1,
+      "element2": 1,
+      "base": {
+        "hp": 114,
+        "attack": 146,
+        "defense": 114,
+        "sp_attack": 74,
+        "sp_defense": 98,
+        "speed": 90
+      },
+      "rarity": 5,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 3,
+      "xp_yield": 166,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    },
+    {
+      "dex_id": 298,
+      "name": "wall-298",
+      "element1": 6,
+      "element2": 4,
+      "base": {
+        "hp": 138,
+        "attack": 58,
+        "defense": 155,
+        "sp_attack": 74,
+        "sp_defense": 155,
+        "speed": 58
+      },
+      "rarity": 5,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 3,
+      "xp_yield": 166,
+      "spawns": [
+        "hollow_mire"
+      ]
+    },
+    {
+      "dex_id": 299,
+      "name": "bruiser-299",
+      "element1": 11,
+      "element2": 11,
+      "base": {
+        "hp": 108,
+        "attack": 138,
+        "defense": 108,
+        "sp_attack": 70,
+        "sp_defense": 93,
+        "speed": 85
+      },
+      "rarity": 5,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 3,
+      "xp_yield": 160,
+      "spawns": [
+        "verdant_meadow"
+      ]
+    },
+    {
+      "dex_id": 300,
+      "name": "sweeper-300",
+      "element1": 9,
+      "element2": 8,
+      "base": {
+        "hp": 81,
+        "attack": 152,
+        "defense": 72,
+        "sp_attack": 99,
+        "sp_defense": 72,
+        "speed": 152
+      },
+      "rarity": 5,
+      "abilities": [],
+      "learnset": [],
+      "evolves_to_id": 0,
+      "evolve_level": 0,
+      "catch_rate": 3,
+      "xp_yield": 165,
+      "spawns": [
+        "tidewreck_coast"
+      ]
+    }
+  ]
+}

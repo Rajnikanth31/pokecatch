@@ -1,0 +1,74 @@
+name: android-apk
+
+# Builds a debug-signed Android APK from the Godot client and:
+#   - uploads it as a workflow artifact on every manual run
+#   - attaches it to a GitHub Release when you push a version tag (v*)
+#
+# Uses the prebuilt Android export template (export_presets.cfg has
+# use_gradle_build=false), so NO Android SDK / Gradle is needed in CI — only
+# Godot + its export templates + a debug keystore. That keeps this fast and
+# hermetic.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch: {}   # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write          # needed to create/attach to a Release
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17 (provides keytool + apksigner)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Godot 4.2.2 + export templates
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.2.2
+          use-dotnet: false
+          include-templates: true
+
+      - name: Generate a debug keystore
+        run: |
+          keytool -keyalg RSA -genkeypair -alias androiddebugkey \
+            -keypass android -keystore debug.keystore -storepass android \
+            -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
+
+      - name: Import project resources
+        # First headless pass imports assets so the export doesn't fail cold.
+        run: godot --headless --path client-godot --import || true
+
+      - name: Export APK
+        env:
+          # Godot 4.2+ reads the debug signing keystore from these env vars, so we
+          # don't need editor settings baked into the repo.
+          GODOT_ANDROID_KEYSTORE_DEBUG_PATH: ${{ github.workspace }}/debug.keystore
+          GODOT_ANDROID_KEYSTORE_DEBUG_USER: androiddebugkey
+          GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
+        run: |
+          mkdir -p build
+          godot --headless --path client-godot --export-debug "Android" \
+            "${{ github.workspace }}/build/beastbound.apk"
+          ls -lh build/
+
+      - name: Upload APK as build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: beastbound-apk
+          path: build/beastbound.apk
+          if-no-files-found: error
+
+      - name: Attach APK to the GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/beastbound.apk
+          generate_release_notes: true

@@ -1,0 +1,122 @@
+openapi: 3.1.0
+info:
+  title: Aurelia Beastbound API
+  version: 1.0.0
+  description: >
+    Public REST surface fronted by the API gateway. Real-time battle traffic uses
+    the WebSocket endpoint documented at the bottom, NOT REST. All REST calls
+    require a Bearer access token except /auth/*. The gateway terminates TLS,
+    authenticates, rate-limits, then proxies to the owning microservice.
+servers:
+  - url: https://api.beastbound.gg/v1
+security:
+  - bearerAuth: []
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer, bearerFormat: JWT }
+  schemas:
+    Error:
+      type: object
+      properties:
+        code: { type: string }
+        message: { type: string }
+    AuthResponse:
+      type: object
+      properties:
+        access_token: { type: string }
+        refresh_token: { type: string }
+        expires_in: { type: integer }
+    Creature:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        dex_id: { type: integer }
+        nickname: { type: string }
+        level: { type: integer }
+        xp: { type: integer }
+        is_shiny: { type: boolean }
+    MatchTicket:
+      type: object
+      properties:
+        ticket_id: { type: string }
+        mode: { type: string, enum: [ranked, casual] }
+        status: { type: string, enum: [queued, matched, cancelled] }
+        battle_ws: { type: string, description: WebSocket URL once matched }
+paths:
+  /auth/register:
+    post:
+      security: []
+      summary: Create an account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password, display_name]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string, minLength: 10 }
+                display_name: { type: string }
+      responses:
+        '201': { description: created, content: { application/json: { schema: { $ref: '#/components/schemas/AuthResponse' } } } }
+        '409': { description: email taken, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /auth/login:
+    post:
+      security: []
+      summary: Exchange credentials for tokens
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/AuthResponse' } } } }
+        '401': { description: invalid credentials }
+  /auth/refresh:
+    post:
+      security: []
+      summary: Rotate a refresh token for a new access token
+      responses: { '200': { description: ok } , '401': { description: revoked } }
+  /profile/me:
+    get:
+      summary: Current player profile, MMR, currencies
+      responses: { '200': { description: ok } }
+  /creatures:
+    get:
+      summary: List the player's creature collection (paginated)
+      parameters:
+        - { name: cursor, in: query, schema: { type: string } }
+        - { name: limit, in: query, schema: { type: integer, default: 50, maximum: 100 } }
+      responses:
+        '200':
+          description: ok
+          content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Creature' } } } }
+  /creatures/{id}/evolve:
+    post:
+      summary: Evolve a creature (server validates level/item requirements)
+      parameters: [ { name: id, in: path, required: true, schema: { type: string } } ]
+      responses: { '200': { description: evolved }, '409': { description: requirements not met } }
+  /team:
+    put:
+      summary: Set the active battle team (≤6 creature ids, ordered)
+      responses: { '200': { description: saved }, '422': { description: invalid team } }
+  /matchmaking/queue:
+    post:
+      summary: Enter the matchmaking pool
+      requestBody:
+        content: { application/json: { schema: { type: object, properties: { mode: { type: string, enum: [ranked, casual] } } } } }
+      responses: { '202': { description: queued, content: { application/json: { schema: { $ref: '#/components/schemas/MatchTicket' } } } } }
+    delete:
+      summary: Leave the queue
+      responses: { '204': { description: left } }
+  /trades:
+    post:
+      summary: Open an escrowed trade with another player
+      responses: { '201': { description: created } }
+  /leaderboard/{season}:
+    get:
+      summary: Top players + caller's rank for a season
+      parameters: [ { name: season, in: path, required: true, schema: { type: string } } ]
+      responses: { '200': { description: ok } }
+# ---------------------------------------------------------------------------
+# WebSocket (documented here for completeness; not REST):
+#   wss://battle-{region}.beastbound.gg/v1/battle/{session_id}?ticket={jwt}
+#   Client -> Server: { "type":"action", "seq":N, "kind":"move|switch", "slot":0-3 }
+#   Server -> Client: { "type":"turn|state|end", "events":[...], "digest":U64, "state":{...} }
+#   Reconnect: resend last seq; server replies with a full StateSnapshot.

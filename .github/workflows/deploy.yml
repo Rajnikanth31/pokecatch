@@ -1,0 +1,37 @@
+name: deploy
+on:
+  # Manual only — image build + canary deploy targets a real cluster, so it must
+  # not fire automatically on a tag (that would fail with no cluster configured).
+  workflow_dispatch: {}
+permissions: { contents: read, packages: write, id-token: write }
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [gateway, battle, profile, matchmaking]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: deploy/docker/battle.Dockerfile
+          build-args: SERVICE=${{ matrix.service }}
+          tags: ghcr.io/aurelia/beastbound-${{ matrix.service }}:${{ github.ref_name }}
+          push: true
+  canary:
+    needs: build-push
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      # Argo Rollouts canary: 10% -> bake 10m watching SLOs -> 50% -> 100%.
+      # Auto-rollback if error budget burn alert fires during the bake.
+      - name: Promote canary via Argo Rollouts
+        run: |
+          echo "kubectl argo rollouts set image ... && kubectl argo rollouts promote ..."

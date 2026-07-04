@@ -1,0 +1,44 @@
+name: ci
+on:
+  push: { branches: [main] }
+  pull_request:
+permissions: { contents: read }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version: "1.22", cache: true }
+      - name: Resolve modules (writes go.sum on first run)
+        run: go mod tidy
+      - name: Vet
+        run: go vet ./...
+      - name: Unit + integration tests (race detector + coverage)
+        run: go test -race -covermode=atomic -coverprofile=cover.out ./...
+      - name: Coverage gate (fail under 70%)
+        run: |
+          pct=$(go tool cover -func=cover.out | tail -1 | awk '{print $3}' | tr -d '%')
+          echo "coverage: ${pct}%"
+          awk -v p="$pct" 'BEGIN { exit (p < 70) }'
+      - name: Reference parity (engine + matchmaker)
+        run: |
+          node test/reference/verify_engine.js
+      - name: Reference parity (full session turn loop)
+        run: |
+          node test/reference/verify_session.mjs
+      - name: Reference parity (auth/trade/AI/save)
+        run: |
+          node test/reference/verify_backend.mjs
+      - name: End-to-end battle demo (smoke test)
+        run: go run ./services/battle/cmd/demo
+      - name: Regenerate dex and assert clean diff
+        run: |
+          node tools/creaturegen/generate.mjs --seed 42 --count 300 --out /tmp/seed.json
+          diff -q /tmp/seed.json data/creatures/seed.json
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: golangci/golangci-lint-action@v6
+        with: { version: latest }
