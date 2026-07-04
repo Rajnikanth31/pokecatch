@@ -79,7 +79,9 @@ func (h *Handlers) refresh(w http.ResponseWriter, r *http.Request) {
 }
 
 func toResp(p TokenPair) tokenResp {
-	return tokenResp{AccessToken: p.AccessToken, RefreshToken: p.RefreshToken, ExpiresIn: p.ExpiresIn}
+	// TokenPair and tokenResp have identical fields, so a direct conversion is
+	// clearer than a field-by-field literal (satisfies gosimple S1016).
+	return tokenResp(p)
 }
 
 // --- transport helpers -----------------------------------------------------

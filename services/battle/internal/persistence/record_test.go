@@ -45,7 +45,7 @@ func playAndRecord(seed uint64, dex *creatures.Dex) MatchRecord {
 	bt := engine.NewBattle(seed, a, b)
 	for !bt.Over && bt.Turn < 100 {
 		actions := [2]engine.MoveAction{{Kind: engine.ActMove, SkillSlot: 0}, {Kind: engine.ActMove, SkillSlot: 0}}
-		bt.ResolveTurn(actions)
+		_, _ = bt.ResolveTurn(actions)
 		rec.RecordTurn(actions)
 	}
 	return rec.Finish(bt.Winner, bt.Digest())

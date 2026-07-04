@@ -217,7 +217,7 @@ func TestDigestChangesAsBattleProgresses(t *testing.T) {
 	sideB := &Side{PlayerID: "B", Party: []*Battler{mkBattler(mkSpecies(2, types.Neutral, types.Neutral, base), 40, "tackle")}}
 	bt := NewBattle(2024, sideA, sideB)
 	d0 := bt.Digest()
-	bt.ResolveTurn([2]MoveAction{{Kind: ActMove, SkillSlot: 0}, {Kind: ActMove, SkillSlot: 0}})
+	_, _ = bt.ResolveTurn([2]MoveAction{{Kind: ActMove, SkillSlot: 0}, {Kind: ActMove, SkillSlot: 0}})
 	if bt.Digest() == d0 {
 		t.Fatal("digest should change after a turn of damage")
 	}

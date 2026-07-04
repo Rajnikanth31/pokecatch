@@ -27,17 +27,6 @@ const (
 	Boss
 )
 
-func (d Difficulty) searchDepth() int {
-	switch d {
-	case Easy:
-		return 1
-	case Normal, Hard:
-		return 2
-	default:
-		return 2 // bosses get depth 2 + no mistake chance + scripted phases on top
-	}
-}
-
 // mistakeChance is the probability the AI picks the 2nd-best action instead of
 // the best — the primary "weakness" dial for accessible PvE.
 func (d Difficulty) mistakeChance() int {
