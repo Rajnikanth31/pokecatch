@@ -150,7 +150,7 @@ tell me and I'll add the deploy-key path to the Terraform.
 
 ```powershell
 cd E:\code\Pokemon\deploy\terraform
-Copy-Item terraform.tfvars.example terraform.tfvars
+Copy-Item terraform.tfvars.pokemon terraform.tfvars
 notepad terraform.tfvars
 ```
 
@@ -324,7 +324,7 @@ Everything lives in `deploy/terraform/`:
 |---|---|
 | `main.tf` | The infrastructure: finds the default VPC + latest Amazon Linux AMI, creates the SSH key pair, security group, EC2 instance, and Elastic IP. |
 | `variables.tf` | The knobs (region, instance type, key path, your IP, repo URL) with defaults. |
-| `terraform.tfvars` | **Your** values (gitignored — never committed). Created from `.example`. |
+| `terraform.tfvars` | **Your** values (gitignored — never committed). Created from `terraform.tfvars.pokemon`. |
 | `outputs.tf` | What gets printed after apply (IP, URLs, ssh command). |
 | `user_data.sh` | The boot script the instance runs once: swap → Docker → clone repo → `docker compose up`. |
 
@@ -343,7 +343,7 @@ ssh-keygen -t ed25519
 
 # each deploy
 cd E:\code\Pokemon\deploy\terraform
-Copy-Item terraform.tfvars.example terraform.tfvars   # edit it
+Copy-Item terraform.tfvars.pokemon terraform.tfvars   # edit it
 terraform init
 terraform apply            # -> note the public_ip
 ssh ec2-user@<ip> "sudo tail -f /var/log/beastbound-deploy.log"   # wait for DONE

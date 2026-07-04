@@ -11,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	auth "github.com/aurelia/beastbound/services/auth/internal"
+	"github.com/aurelia/beastbound/pkg/token"
 	gw "github.com/aurelia/beastbound/services/gateway/internal"
 )
 
@@ -19,10 +19,10 @@ func main() {
 	secret := []byte(envOr("AUTH_JWT_SECRET", "dev-only-secret"))
 
 	// The gateway verifies access tokens statelessly (pure CPU, no DB) using the
-	// shared HS256 secret. VerifierFunc adapts the auth package's verifier to the
-	// gateway's TokenVerifier interface.
-	verifier := gw.VerifierFunc(func(token string) (string, error) {
-		claims, err := auth.VerifyAccessToken(secret, token)
+	// shared HS256 secret from pkg/token. VerifierFunc adapts that to the gateway's
+	// TokenVerifier interface.
+	verifier := gw.VerifierFunc(func(tok string) (string, error) {
+		claims, err := token.VerifyAccessToken(secret, tok)
 		if err != nil {
 			return "", err
 		}

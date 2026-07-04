@@ -21,11 +21,16 @@ dnf install -y docker git
 systemctl enable --now docker
 usermod -aG docker ec2-user || true
 
-echo "=== [3/5] docker compose plugin ==="
+echo "=== [3/5] docker compose + buildx plugins ==="
 mkdir -p /usr/local/lib/docker/cli-plugins
 curl -SL "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64" \
   -o /usr/local/lib/docker/cli-plugins/docker-compose
 chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+# Amazon Linux's bundled buildx is too old for `docker compose build`
+# (needs >= 0.17). Install a current one so the build works on a fresh box.
+curl -SL "https://github.com/docker/buildx/releases/download/v0.17.1/buildx-v0.17.1.linux-amd64" \
+  -o /usr/local/lib/docker/cli-plugins/docker-buildx
+chmod +x /usr/local/lib/docker/cli-plugins/docker-buildx
 
 echo "=== [4/5] clone the repo ==="
 cd /opt

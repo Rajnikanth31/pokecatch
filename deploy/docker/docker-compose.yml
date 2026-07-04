@@ -1,7 +1,6 @@
 # Local full stack: Postgres + Redis + the Go services. `docker compose up --build`.
 # The DB is seeded from db/migrations on first boot. Services that set
 # DATABASE_URL use Postgres; without it they fall back to in-memory (dev).
-version: "3.9"
 services:
   postgres:
     image: postgres:15-alpine

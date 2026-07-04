@@ -34,7 +34,7 @@ point the phone app at it.
 
 ```powershell
 cd E:\code\Pokemon\deploy\terraform
-copy terraform.tfvars.example terraform.tfvars
+copy terraform.tfvars.pokemon terraform.tfvars
 notepad terraform.tfvars
 ```
 Fill in three things:
