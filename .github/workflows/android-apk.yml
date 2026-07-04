@@ -98,6 +98,18 @@ jobs:
           echo "--- editor_settings-4.tres ---"
           cat "$SETTINGS_FILE"
 
+      # ── Diagnostic listing ──────────────────────────────────────────────
+      - name: Diagnostic listing
+        run: |
+          echo "=== ENVIRONMENT ==="
+          echo "ANDROID_HOME: ${ANDROID_HOME}"
+          echo "JAVA_HOME: ${JAVA_HOME}"
+          echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
+          echo "=== GODOT CONFIG DIR ==="
+          ls -la ~/.config/godot/ || true
+          echo "=== GODOT TEMPLATE DIR ==="
+          find ~/.local/share/godot/ -type f || true
+
       # ── Import pass ────────────────────────────────────────────────────
       # Godot 4.2 does NOT have a standalone --import flag.  Start the
       # editor headlessly with --quit to trigger the import pipeline.
