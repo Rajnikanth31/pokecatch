@@ -58,6 +58,11 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Install Android SDK components (build-tools;33.0.2)
+        run: |
+          yes | sdkmanager --licenses || true
+          sdkmanager "platform-tools" "build-tools;33.0.2" "platforms;android-33"
+
       # ── Godot 4.2.2 ────────────────────────────────────────────────────
       # Installs the standard (non-.NET) editor and its export templates.
       # After this step, `godot` is on PATH.
@@ -77,6 +82,29 @@ jobs:
             -storepass android \
             -dname "CN=Android Debug,O=Android,C=US" \
             -validity 9999 -deststoretype pkcs12
+
+      - name: Inject Keystore Paths into export_presets.cfg
+        run: |
+          cat << 'EOF' > update_presets.py
+          import sys
+          workspace = sys.argv[1]
+          with open('client-godot/export_presets.cfg', 'r', encoding='utf-8') as f:
+              lines = f.readlines()
+          new_lines = []
+          for line in lines:
+              new_lines.append(line)
+              if line.strip() == '[preset.0.options]':
+                  new_lines.append(f'keystore/debug="{workspace}/debug.keystore"\n')
+                  new_lines.append('keystore/debug_user="androiddebugkey"\n')
+                  new_lines.append('keystore/debug_password="android"\n')
+          with open('client-godot/export_presets.cfg', 'w', encoding='utf-8') as f:
+              f.writelines(new_lines)
+          EOF
+          python update_presets.py "${{ github.workspace }}"
+          echo "--- export_presets.cfg ---"
+          cat client-godot/export_presets.cfg
+
+
 
       # ── Godot editor settings ──────────────────────────────────────────
       # Godot 4.2 reads Android SDK path, Java path, and keystore config
