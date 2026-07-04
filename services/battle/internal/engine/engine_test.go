@@ -71,11 +71,15 @@ func TestNatureModifier(t *testing.T) {
 	sp := mkSpecies(1, types.Neutral, types.Neutral, types.Stats{HP: 100, Attack: 100, Defense: 100, SpAttack: 100, SpDefense: 100, Speed: 100})
 	inst := &creatures.Instance{Level: 100, IVs: types.Stats{HP: 31, Attack: 31, Defense: 31, SpAttack: 31, SpDefense: 31, Speed: 31}, Nature: Nature{Name: "Adamant", Up: "attack", Down: "sp_attack"}}
 	got := creatures.ComputeStats(sp, inst)
-	if got.Attack != int(236*1.1) {
-		t.Fatalf("boosted Attack = %d, want %d", got.Attack, int(236*1.1))
+	// Base non-HP stat at L100/maxIV is 236; Adamant applies +10%/-10% then
+	// truncates: floor(236*1.1)=259, floor(236*0.9)=212.
+	const wantAtk = 259
+	const wantSpA = 212
+	if got.Attack != wantAtk {
+		t.Fatalf("boosted Attack = %d, want %d", got.Attack, wantAtk)
 	}
-	if got.SpAttack != int(236*0.9) {
-		t.Fatalf("reduced SpAttack = %d, want %d", got.SpAttack, int(236*0.9))
+	if got.SpAttack != wantSpA {
+		t.Fatalf("reduced SpAttack = %d, want %d", got.SpAttack, wantSpA)
 	}
 }
 

@@ -50,7 +50,7 @@ production host; use `http://localhost:8088/v1` for local).
 
 ```bash
 go run ./services/battle/cmd/demo      # plays a match, writes demo-match-record.json
-go run ./tools/replay --match demo-match-record.json
+go run ./services/battle/cmd/replay --match demo-match-record.json
 # -> VERDICT: AUTHENTIC ✔   (re-simulated winner + digest match the record)
 ```
 

@@ -61,7 +61,7 @@ func main() {
 			if blob, err := json.MarshalIndent(record, "", "  "); err == nil {
 				if os.WriteFile("demo-match-record.json", blob, 0o644) == nil {
 					fmt.Println("\nwrote demo-match-record.json — verify it with:")
-					fmt.Println("  go run ./tools/replay --match demo-match-record.json")
+					fmt.Println("  go run ./services/battle/cmd/replay --match demo-match-record.json")
 				}
 			}
 		},
