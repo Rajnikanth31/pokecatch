@@ -92,7 +92,7 @@ func ChooseAction(r Randoms, d Difficulty, self View, bench []View, opp View) De
 			if b.Fainted {
 				continue
 			}
-			s := scoreSwitch(b, opp)
+			s := scoreSwitch(b, self, opp)
 			options = append(options, scored{Decision{Switch: true, SwitchTo: bi}, s})
 		}
 	}
@@ -149,12 +149,24 @@ func scoreMove(self, opp View, mv creatures.Skill) float64 {
 	return expected
 }
 
-func scoreSwitch(in, opp View) float64 {
-	// Reward bringing in a resist; penalize the tempo loss of switching.
+func scoreSwitch(in, self, opp View) float64 {
+	// Reward bringing in a creature that resists the opponent's STAB...
 	defMult := types.DualEffectiveness(opp.Element1, in.Element1, in.Element2)
-	// Lower incoming effectiveness = better wall. Invert into a score.
-	score := (2.0 - defMult) * 40
-	return score - 25 // switch tempo cost
+	resistValue := (2.0 - defMult) * 30 // lower incoming multiplier = better wall
+
+	// ...and weight it by URGENCY: how badly the current active is threatened.
+	// A healthy, safe active shouldn't switch (that's a weak-AI tell), but a
+	// low-HP active staring down a super-effective attacker should bail.
+	incoming := types.DualEffectiveness(opp.Element1, self.Element1, self.Element2)
+	urgency := 0.0
+	if incoming >= 2.0 {
+		urgency += 40
+	}
+	if self.HPFrac < 0.25 {
+		urgency += 40
+	}
+
+	return resistValue + urgency - 15 // minus a small tempo cost for switching
 }
 
 func shouldConsiderSwitch(self, opp View) bool {
