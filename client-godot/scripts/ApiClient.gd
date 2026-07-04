@@ -4,7 +4,7 @@
 # refreshing — so gameplay code never deals with token lifetime.
 extends Node
 
-const BASE_URL := "https://api.beastbound.gg/v1"   # overridden to localhost in dev
+const BASE_URL := "http://15.207.157.71:8088/v1"   # AWS backend (free-tier EC2)
 
 var _access := ""
 var _refresh := ""
