@@ -137,6 +137,11 @@ jobs:
           ls -la ~/.config/godot/ || true
           echo "=== GODOT TEMPLATE DIR ==="
           find ~/.local/share/godot/ -type f || true
+          echo "=== ANDROID BUILD TOOLS ==="
+          ls -la ${ANDROID_HOME}/build-tools/ || true
+          echo "=== ANDROID PLATFORMS ==="
+          ls -la ${ANDROID_HOME}/platforms/ || true
+
 
       # ── Import pass ────────────────────────────────────────────────────
       # Godot 4.2 does NOT have a standalone --import flag.  Start the
