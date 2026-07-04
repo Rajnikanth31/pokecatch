@@ -13,18 +13,18 @@
 # ║  WHAT IT DOES                                                           ║
 # ║  ────────────                                                           ║
 # ║  1. Checks out the repo.                                                ║
-# ║  2. Installs JDK 17 (for keytool) + Godot 4.2.2 with export templates. ║
+# ║  2. Installs JDK 17 + Android SDK + Godot 4.2.2 with export templates. ║
 # ║  3. Generates a throwaway debug keystore via keytool.                   ║
-# ║  4. Runs a headless editor import pass (warms the .godot/imported       ║
-# ║     cache so the export doesn't fail on cold resources).                ║
-# ║  5. Exports the "Android" preset → build/beastbound.apk.               ║
-# ║  6. Uploads the APK as a workflow artifact.                             ║
-# ║  7. If triggered by a tag, creates/updates a GitHub Release and         ║
+# ║  4. Writes Godot editor_settings with SDK paths + keystore config.      ║
+# ║  5. Runs a headless editor import pass to warm the resource cache.      ║
+# ║  6. Exports the "Android" preset → build/beastbound.apk.               ║
+# ║  7. Uploads the APK as a workflow artifact.                             ║
+# ║  8. If triggered by a tag, creates/updates a GitHub Release and         ║
 # ║     attaches the APK to it.                                             ║
 # ║                                                                         ║
-# ║  Uses the prebuilt APK template (use_gradle_build=false), so NO         ║
-# ║  Android SDK or Gradle is needed — only Godot + export templates +      ║
-# ║  a debug keystore.  Runs entirely on free GitHub-hosted runners.        ║
+# ║  Uses the prebuilt APK template (use_gradle_build=false), so no         ║
+# ║  Gradle build step is needed — but the Android SDK is still required    ║
+# ║  for apksigner/aapt.  Runs entirely on free GitHub-hosted runners.      ║
 # ║                                                                         ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 
@@ -45,12 +45,18 @@ jobs:
       - uses: actions/checkout@v4
 
       # ── JDK 17 ─────────────────────────────────────────────────────────
-      # Provides `keytool` for generating the debug keystore.
-      - name: Set up JDK 17 (provides keytool)
+      # Provides keytool (for keystore) and jarsigner (for APK signing).
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: "17"
+
+      # ── Android SDK ─────────────────────────────────────────────────────
+      # Even with use_gradle_build=false, Godot 4.2 needs the Android SDK
+      # (for aapt2, apksigner, etc.) and its path in editor settings.
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
 
       # ── Godot 4.2.2 ────────────────────────────────────────────────────
       # Installs the standard (non-.NET) editor and its export templates.
@@ -63,9 +69,7 @@ jobs:
           include-templates: true
 
       # ── Debug keystore ──────────────────────────────────────────────────
-      # Godot 4.2 reads Android debug signing config from env vars
-      # (GODOT_ANDROID_KEYSTORE_DEBUG_*), so we don't need editor_settings
-      # baked into the repo.  This creates a throwaway keystore for CI.
+      # Create a throwaway debug keystore for CI signing.
       - name: Generate a debug keystore
         run: |
           keytool -keyalg RSA -genkeypair -alias androiddebugkey \
@@ -74,16 +78,30 @@ jobs:
             -dname "CN=Android Debug,O=Android,C=US" \
             -validity 9999 -deststoretype pkcs12
 
+      # ── Godot editor settings ──────────────────────────────────────────
+      # Godot 4.2 reads Android SDK path, Java path, and keystore config
+      # from editor_settings-4.tres.  The GODOT_ANDROID_KEYSTORE_DEBUG_*
+      # env vars alone are NOT sufficient — we must also write the file
+      # so the export can find aapt2/apksigner from the SDK.
+      - name: Configure Godot editor settings for Android
+        run: |
+          mkdir -p ~/.config/godot/
+          SETTINGS_FILE=~/.config/godot/editor_settings-4.tres
+          echo '[gd_resource type="EditorSettings" format=3]' > "$SETTINGS_FILE"
+          echo '' >> "$SETTINGS_FILE"
+          echo '[resource]' >> "$SETTINGS_FILE"
+          echo "export/android/android_sdk_path = \"${ANDROID_HOME}\"" >> "$SETTINGS_FILE"
+          echo "export/android/java_sdk_path = \"${JAVA_HOME}\"" >> "$SETTINGS_FILE"
+          echo "export/android/debug_keystore = \"${GITHUB_WORKSPACE}/debug.keystore\"" >> "$SETTINGS_FILE"
+          echo 'export/android/debug_keystore_user = "androiddebugkey"' >> "$SETTINGS_FILE"
+          echo 'export/android/debug_keystore_pass = "android"' >> "$SETTINGS_FILE"
+          echo "--- editor_settings-4.tres ---"
+          cat "$SETTINGS_FILE"
+
       # ── Import pass ────────────────────────────────────────────────────
-      # Godot 4.2 does NOT have a standalone --import flag.  The correct
-      # way to run the import pipeline headlessly is to start the editor
-      # with --editor --quit.  This populates .godot/imported/ so the
-      # export step doesn't fail on cold resources.
-      #
-      # We use `timeout` to guard against the editor hanging (e.g. on an
-      # import dialog or a project with errors).  A non-zero exit from
-      # timeout is acceptable (Godot sometimes exits with 0, sometimes
-      # not after --quit).
+      # Godot 4.2 does NOT have a standalone --import flag.  Start the
+      # editor headlessly with --quit to trigger the import pipeline.
+      # Timeout guards against hangs; non-zero exit is acceptable.
       - name: Import project resources (headless editor pass)
         run: |
           timeout 120 godot --headless --editor --path client-godot --quit || true
@@ -96,7 +114,7 @@ jobs:
           GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
         run: |
           mkdir -p "${{ github.workspace }}/build"
-          godot --headless --path client-godot --export-debug "Android" \
+          godot --headless --verbose --path client-godot --export-debug "Android" \
             "${{ github.workspace }}/build/beastbound.apk"
           # Verify the APK was actually produced
           ls -lh "${{ github.workspace }}/build/beastbound.apk"
