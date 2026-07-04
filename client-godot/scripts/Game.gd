@@ -65,7 +65,10 @@ func button(text: String, cb: Callable) -> Button:
 	var b := Button.new()
 	b.text = text
 	b.custom_minimum_size = Vector2(0, 60)
-	b.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	# NOTE: Button has no autowrap_mode in Godot 4.2 (added in 4.3). Setting it
+	# throws and the button never gets added — which is exactly why an earlier
+	# build showed labels but no tappable buttons. Keep labels short instead.
+	b.clip_text = true
 	b.add_theme_font_size_override("font_size", MED)
 	b.pressed.connect(cb)
 	content.add_child(b)
