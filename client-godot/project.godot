@@ -10,12 +10,13 @@ config_version=5
 
 [application]
 config/name="Aurelia: Beastbound"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://scenes/Game.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 ; GL Compatibility renderer is the one that exports cleanly to Web + low-end mobile.
 
 [autoload]
 EventBus="*res://scripts/EventBus.gd"
+GameData="*res://scripts/GameData.gd"
 Api="*res://scripts/ApiClient.gd"
 Battle="*res://scripts/BattleClient.gd"
 
@@ -23,7 +24,7 @@ Battle="*res://scripts/BattleClient.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/handheld/orientation="landscape"
+window/handheld/orientation="portrait"
 
 [rendering]
 renderer/rendering_method="gl_compatibility"
