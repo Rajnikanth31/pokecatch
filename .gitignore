@@ -22,6 +22,14 @@ export.cfg
 .env
 *.pem
 
+# --- Terraform (never commit state or your filled-in vars) ---
+deploy/terraform/.terraform/
+deploy/terraform/*.tfstate
+deploy/terraform/*.tfstate.*
+deploy/terraform/terraform.tfvars
+deploy/terraform/.terraform.lock.hcl
+crash.log
+
 # --- Match/replay scratch output ---
 demo-match-record.json
 

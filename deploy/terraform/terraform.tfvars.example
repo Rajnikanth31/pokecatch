@@ -1,0 +1,20 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored.
+
+# Your nearest AWS region (all support free tier).
+region = "ap-south-1"
+
+# Path to YOUR SSH public key. Create one if you don't have it:
+#   ssh-keygen -t ed25519 -C "you@example.com"
+# then use the .pub path here.
+public_key_path = "~/.ssh/id_ed25519.pub"
+
+# Your current public IP as a /32 CIDR, for SSH access only.
+# Find it: curl https://checkip.amazonaws.com   ->   e.g. 203.0.113.4/32
+my_ip_cidr = "203.0.113.4/32"
+
+# Your repo (defaults to the pokecatch repo; change if you forked/renamed).
+repo_url = "https://github.com/Rajnikanth31/pokecatch.git"
+
+# t3.micro is free-tier in most regions. If your region only offers t2.micro
+# free, set that instead.
+# instance_type = "t2.micro"
