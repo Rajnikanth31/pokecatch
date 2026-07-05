@@ -1,0 +1,68 @@
+name: web
+
+# Builds the Godot client as an HTML5/WebGL app and deploys it to GitHub Pages,
+# so you can test in a browser (no APK install) at:
+#   https://<your-username>.github.io/<repo>/
+#
+# ONE-TIME SETUP: GitHub repo -> Settings -> Pages -> Build and deployment ->
+# Source: "GitHub Actions". Then run this workflow.
+#
+# The Web preset uses thread_support=false, so it runs on a plain static host
+# (Pages) without the cross-origin-isolation headers threaded builds require.
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["client-godot/**"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Godot 4.2.2 + export templates
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.2.2
+          use-dotnet: false
+          include-templates: true
+
+      - name: Import project resources (headless editor pass)
+        run: timeout 120 godot --headless --editor --path client-godot --quit || true
+
+      - name: Export Web build
+        run: |
+          mkdir -p client-godot/web
+          # Try release template first, fall back to debug (more forgiving).
+          godot --headless --path client-godot --export-release "Web" "$PWD/client-godot/web/index.html" \
+            || godot --headless --verbose --path client-godot --export-debug "Web" "$PWD/client-godot/web/index.html"
+          ls -lh client-godot/web/
+          # GitHub Pages needs a .nojekyll file or it strips files starting with _.
+          touch client-godot/web/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: client-godot/web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

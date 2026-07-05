@@ -23,13 +23,15 @@ const TYPE_CHART := [
 ]
 
 static func effectiveness(atk: int, d1: int, d2: int) -> float:
-	var m: float = TYPE_CHART[atk][d1]
+	var m: float = float(TYPE_CHART[atk][d1])
 	if d2 != d1:
-		m *= TYPE_CHART[atk][d2]
+		m *= float(TYPE_CHART[atk][d2])
 	return m
 
 static func element_name(e: int) -> String:
-	return ELEMENTS[e] if e >= 0 and e < ELEMENTS.size() else "?"
+	if e >= 0 and e < ELEMENTS.size():
+		return String(ELEMENTS[e])
+	return "?"
 
 static func _stat(b: int, iv: int, level: int, is_hp: bool) -> int:
 	var core: float = (2.0 * b + iv) * level / 100.0
@@ -78,8 +80,11 @@ static func damage(attacker: Dictionary, defender: Dictionary, skill: Dictionary
 	var a: float = float(attacker["stats"]["spa"]) if is_special else float(attacker["stats"]["atk"])
 	var d: float = float(defender["stats"]["spd"]) if is_special else float(defender["stats"]["def"])
 	var lvl := int(attacker["level"])
-	var base := (floor(2.0 * lvl / 5.0) + 2.0) * float(skill["power"]) * a / d / 50.0
-	var dmg := floor(base) + 2.0
+	# Use the typed math funcs (floorf/roundi/maxi/clampf). The plain floor/round/
+	# clamp/min/max return Variant, which breaks `:=` type inference — that was the
+	# parse error that blanked the whole app.
+	var base: float = (floorf(2.0 * lvl / 5.0) + 2.0) * float(skill["power"]) * a / d / 50.0
+	var dmg: float = floorf(base) + 2.0
 	var el := int(skill["element"])
 	if el == int(attacker["e1"]) or el == int(attacker["e2"]):
 		dmg *= 1.5
@@ -91,13 +96,13 @@ static func damage(attacker: Dictionary, defender: Dictionary, skill: Dictionary
 	if res["crit"]:
 		dmg *= 1.5
 	dmg *= randf_range(0.85, 1.0)
-	res["damage"] = max(1, int(round(dmg)))
+	res["damage"] = maxi(1, roundi(dmg))
 	return res
 
 static func catch_chance(cur_hp: int, max_hp: int, catch_rate: int, ball_bonus: float = 1.0) -> float:
 	var hp_factor := float(3 * max_hp - 2 * cur_hp) / float(3 * max_hp)
 	var c := (float(catch_rate) / 255.0) * hp_factor * ball_bonus
-	return clamp(c, 0.02, 0.95)
+	return clampf(c, 0.02, 0.95)
 
 static func ai_pick_move(self_b: Dictionary, opp: Dictionary) -> int:
 	var best := 0

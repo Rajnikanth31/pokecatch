@@ -23,6 +23,8 @@ func _ready() -> void:
 	var bg := ColorRect.new()
 	bg.color = Color(0.09, 0.11, 0.16)
 	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	# Never let the full-screen background swallow clicks meant for buttons.
+	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(bg)
 
 	# Persistent status line (never cleared). If the script runs at all, this
@@ -30,18 +32,23 @@ func _ready() -> void:
 	status_label = Label.new()
 	status_label.text = "Aurelia: Beastbound"
 	status_label.position = Vector2(16, 8)
+	status_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	status_label.add_theme_font_size_override("font_size", 16)
 	add_child(status_label)
 
-	# Simple full-rect column with margins (no ScrollContainer — that nesting was
-	# fragile). VBox stretches children to full width, so buttons are tappable.
+	# Simple full-rect column (this is the layout that worked and stays tappable).
+	# It's portrait on phones where the screen is tall enough for the battle UI;
+	# the desktop test window is just short, so a few buttons sit near the bottom.
 	content = VBoxContainer.new()
 	content.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	content.offset_left = 20
-	content.offset_top = 44
-	content.offset_right = -20
-	content.offset_bottom = -20
-	content.add_theme_constant_override("separation", 12)
+	content.offset_left = 16
+	content.offset_top = 40
+	content.offset_right = -16
+	content.offset_bottom = -12
+	content.add_theme_constant_override("separation", 10)
+	# The column passes mouse through to its children (buttons); it must not
+	# capture clicks itself, or the whole UI feels dead.
+	content.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(content)
 
 	# Guard: if the creature data didn't ship in the APK, say so on screen instead
@@ -68,17 +75,21 @@ func title(text: String, size := BIG) -> void:
 	l.text = text
 	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	l.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	l.add_theme_font_size_override("font_size", size)
 	content.add_child(l)
 
 func button(text: String, cb: Callable) -> Button:
 	var b := Button.new()
 	b.text = text
-	b.custom_minimum_size = Vector2(0, 60)
+	b.custom_minimum_size = Vector2(0, 52)
 	# NOTE: Button has no autowrap_mode in Godot 4.2 (added in 4.3). Setting it
 	# throws and the button never gets added — which is exactly why an earlier
 	# build showed labels but no tappable buttons. Keep labels short instead.
 	b.clip_text = true
+	# Explicitly make sure the button takes mouse input and can be focused/tapped.
+	b.mouse_filter = Control.MOUSE_FILTER_STOP
+	b.focus_mode = Control.FOCUS_ALL
 	b.add_theme_font_size_override("font_size", MED)
 	b.pressed.connect(cb)
 	content.add_child(b)
@@ -173,7 +184,8 @@ func show_battle(intro: String) -> void:
 	log_label = RichTextLabel.new()
 	log_label.bbcode_enabled = true
 	log_label.fit_content = true
-	log_label.custom_minimum_size = Vector2(0, 130)
+	log_label.custom_minimum_size = Vector2(0, 96)
+	log_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	log_label.add_theme_font_size_override("normal_font_size", 20)
 	content.add_child(log_label)
 	_log(intro)
@@ -193,6 +205,7 @@ func _make_bar(maxv: int, val: int) -> ProgressBar:
 	pb.value = val
 	pb.show_percentage = false
 	pb.custom_minimum_size = Vector2(0, 24)
+	pb.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	content.add_child(pb)
 	return pb
 
@@ -238,7 +251,7 @@ func _apply(attacker: Dictionary, defender: Dictionary, mv: Dictionary) -> void:
 	if bool(r["missed"]):
 		_log("%s used %s — missed!" % [String(attacker["name"]), String(mv["name"])])
 		return
-	defender["cur_hp"] = max(0, int(defender["cur_hp"]) - int(r["damage"]))
+	defender["cur_hp"] = maxi(0, int(defender["cur_hp"]) - int(r["damage"]))
 	var extra := ""
 	var eff := float(r["eff"])
 	if eff > 1.0: extra = "  [color=yellow]Super effective![/color]"
@@ -268,7 +281,7 @@ func _win() -> void:
 	var me: Dictionary = GameData.team[active_idx]
 	me["level"] = int(me["level"]) + 1
 	me["max_hp"] = int(me["max_hp"]) + 3
-	me["cur_hp"] = min(int(me["max_hp"]), int(me["cur_hp"]) + 3)
+	me["cur_hp"] = mini(int(me["max_hp"]), int(me["cur_hp"]) + 3)
 	GameData.save()
 	_log("[color=lightgreen]%s fainted! %s grew to Lv%d![/color]" % [String(enemy["name"]), String(me["name"]), int(me["level"])])
 	_continue_button()

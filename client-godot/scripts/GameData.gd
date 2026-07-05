@@ -53,12 +53,12 @@ func spawn_wild(player_level: int) -> Dictionary:
 	var pool: Array = []
 	for id in species_by_id:
 		var rarity := int(species_by_id[id].get("rarity", 0))
-		var w: int = max(1, 6 - rarity)
+		var w: int = maxi(1, 6 - rarity)
 		w = w * w * w
 		for i in w:
 			pool.append(id)
 	var dex_id: int = pool[randi() % pool.size()]
-	var lvl: int = max(2, player_level - (1 + randi() % 3))
+	var lvl: int = maxi(2, player_level - (1 + randi() % 3))
 	seen[dex_id] = true
 	return new_creature(dex_id, lvl)
 
