@@ -5,6 +5,7 @@
 extends Control
 
 var content: VBoxContainer
+var status_label: Label
 var log_label: RichTextLabel
 var enemy: Dictionary = {}
 var active_idx := 0
@@ -24,23 +25,32 @@ func _ready() -> void:
 	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(bg)
 
-	var scroll := ScrollContainer.new()
-	scroll.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	add_child(scroll)
+	# Persistent status line (never cleared). If the script runs at all, this
+	# shows — so a truly blank screen means the APK didn't load this build.
+	status_label = Label.new()
+	status_label.text = "Aurelia: Beastbound"
+	status_label.position = Vector2(16, 8)
+	status_label.add_theme_font_size_override("font_size", 16)
+	add_child(status_label)
 
-	var margin := MarginContainer.new()
-	margin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	margin.add_theme_constant_override("margin_left", 24)
-	margin.add_theme_constant_override("margin_right", 24)
-	margin.add_theme_constant_override("margin_top", 24)
-	margin.add_theme_constant_override("margin_bottom", 24)
-	scroll.add_child(margin)
-
+	# Simple full-rect column with margins (no ScrollContainer — that nesting was
+	# fragile). VBox stretches children to full width, so buttons are tappable.
 	content = VBoxContainer.new()
-	content.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	content.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	content.offset_left = 20
+	content.offset_top = 44
+	content.offset_right = -20
+	content.offset_bottom = -20
 	content.add_theme_constant_override("separation", 12)
-	margin.add_child(content)
+	add_child(content)
+
+	# Guard: if the creature data didn't ship in the APK, say so on screen instead
+	# of failing silently later.
+	if GameData.species_by_id.is_empty():
+		status_label.text = "ERROR: dex.json not loaded"
+		title("Creature data missing from build.", MED)
+		title("(dex.json wasn't packaged)", 18)
+		return
 
 	if GameData.has_save():
 		show_hub()

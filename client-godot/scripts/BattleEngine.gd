@@ -31,18 +31,21 @@ static func effectiveness(atk: int, d1: int, d2: int) -> float:
 static func element_name(e: int) -> String:
 	return ELEMENTS[e] if e >= 0 and e < ELEMENTS.size() else "?"
 
-static func compute_stats(base: Dictionary, ivs: Dictionary, level: int) -> Dictionary:
-	var f := func(b: int, iv: int, is_hp: bool) -> int:
-		var core := (2.0 * b + iv) * level / 100.0
+static func _stat(b: int, iv: int, level: int, is_hp: bool) -> int:
+	var core: float = (2.0 * b + iv) * level / 100.0
+	if is_hp:
 		# HP gets 2x bulk so battles last a few turns (balance-tested), not one-shots.
-		return int(core * 2.0) + level + 10 if is_hp else int(core) + 5
+		return int(core * 2.0) + level + 10
+	return int(core) + 5
+
+static func compute_stats(base: Dictionary, ivs: Dictionary, level: int) -> Dictionary:
 	return {
-		"hp":  f.call(int(base["hp"]), int(ivs["hp"]), true),
-		"atk": f.call(int(base["attack"]), int(ivs["attack"]), false),
-		"def": f.call(int(base["defense"]), int(ivs["defense"]), false),
-		"spa": f.call(int(base["sp_attack"]), int(ivs["sp_attack"]), false),
-		"spd": f.call(int(base["sp_defense"]), int(ivs["sp_defense"]), false),
-		"spe": f.call(int(base["speed"]), int(ivs["speed"]), false),
+		"hp":  _stat(int(base["hp"]), int(ivs["hp"]), level, true),
+		"atk": _stat(int(base["attack"]), int(ivs["attack"]), level, false),
+		"def": _stat(int(base["defense"]), int(ivs["defense"]), level, false),
+		"spa": _stat(int(base["sp_attack"]), int(ivs["sp_attack"]), level, false),
+		"spd": _stat(int(base["sp_defense"]), int(ivs["sp_defense"]), level, false),
+		"spe": _stat(int(base["speed"]), int(ivs["speed"]), level, false),
 	}
 
 static func make_battler(species: Dictionary, level: int, skills: Array) -> Dictionary:
